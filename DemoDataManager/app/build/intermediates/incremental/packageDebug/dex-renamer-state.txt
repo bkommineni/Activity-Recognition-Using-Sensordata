@@ -1,0 +1,4 @@
+#Sat Sep 23 08:49:17 PDT 2017
+base.0=/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

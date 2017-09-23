@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/bharu/.android/build-cache/55834357bcd8bc6e8f4f6a526b3b5c891b7f4e0f/output/jars/libs/ziputils-1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="edae632aa26bfebf26e2b5d6c495f20f33482ece">
+        <dex dex="/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/ziputils-1.1_32cdd1213591222f5684afb0658eb842a6f3246e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bharu/.android/build-cache/55834357bcd8bc6e8f4f6a526b3b5c891b7f4e0f/output/jars/libs/httpmime-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/httpmime-4.1.2_e08df0a620efcdaaca9cb4cd2f343ce217a599fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bharu/.android/build-cache/55834357bcd8bc6e8f4f6a526b3b5c891b7f4e0f/output/jars/libs/sqlcipher.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce76a34bb71db637e8b171d8a4df0e865463d786">
+        <dex dex="/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/sqlcipher_962343d1a2a8f701e64341655ae691cec451425c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bharu/.android/build-cache/360fde29b1c105dfe8a154ee6f60d872075ce3b7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3bcceda156cc07256ec58a93c276bb81f5d01439">
+        <dex dex="/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_8ecedccdac47af548f825a2fdd236d271f0d9a0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bharu/.android/build-cache/55834357bcd8bc6e8f4f6a526b3b5c891b7f4e0f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3a08a680b732a5dd3fbdd5e9742f55a2c5b15c8b">
+        <dex dex="/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_85a5cf7f03075951120d945dc6774462cb7e7063.jar" />
+    </item>
+
+</items>

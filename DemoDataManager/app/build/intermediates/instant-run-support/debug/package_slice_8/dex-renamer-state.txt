@@ -1,0 +1,4 @@
+#Wed Sep 20 10:36:32 PDT 2017
+base.0=/Users/bharu/CS690-PROJECTS/DemoDataManager1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8
+renamed.0=classes.dex
+file.0=/Users/bharu/CS690-PROJECTS/DemoDataManager1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex
