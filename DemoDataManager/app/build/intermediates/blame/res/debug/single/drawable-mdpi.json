@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/DemoDataManager1/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
-        "source": "/Users/bharu/CS690-PROJECTS/DemoDataManager1/app/src/main/res/drawable-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
-        "source": "/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/src/main/res/drawable-mdpi/ic_launcher.png"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/src/main/res/drawable-mdpi/ic_launcher.png"
     }
 ]

@@ -1,5 +1,8 @@
 package com.emotionsense.demo.data;
 
+import java.net.HttpURLConnection;
+import java.net.Socket;
+import java.net.URL;
 import java.util.List;
 
 import android.app.Activity;
@@ -28,24 +31,34 @@ public class MainActivity extends Activity implements DataUploadCallback
 	
 	private SubscribeThread[] subscribeThreads;
 	private SenseOnceThread[] pullThreads;
+	private HttpURLConnection conn = null;
+
+	//Client client = new Client("http://localhost:9999/data",9999);
 
 	// TODO: add push sensors you want to sense from here
 	private final int[] pushSensors = {SensorUtils.SENSOR_TYPE_PROXIMITY,
-			SensorUtils.SENSOR_TYPE_BATTERY,
+			SensorUtils.SENSOR_TYPE_BATTERY,SensorUtils.SENSOR_TYPE_PHONE_STATE
 	};
 	
 	 // TODO: add pull sensors you want to sense once from here
 	private final int[] pullSensors = {SensorUtils.SENSOR_TYPE_ACCELEROMETER,
-			 SensorUtils.SENSOR_TYPE_GYROSCOPE};
+			 SensorUtils.SENSOR_TYPE_GYROSCOPE,
+	         SensorUtils.SENSOR_TYPE_LOCATION,
+	         SensorUtils.SENSOR_TYPE_MAGNETIC_FIELD,
+			 SensorUtils.SENSOR_TYPE_STEP_COUNTER};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		//client.connect();
+
 
 		try
 		{
+			URL url = new URL("http://localhost:9999/data");
+			conn = (HttpURLConnection) url.openConnection();
 			// TODO: change this line of code to change the type of data logger
 			// Note: you shouldn't have more than one logger!
 //			logger = AsyncEncryptedDatabase.getInstance();
@@ -65,7 +78,7 @@ public class MainActivity extends Activity implements DataUploadCallback
 			pullThreads = new SenseOnceThread[pullSensors.length];
 			for (int i = 0; i < pullSensors.length; i++)
 			{
-				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i],conn);
 				Log.d("debug",Integer.toString(pullSensors[i]));
 				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
 				pullThreads[i].start();
@@ -177,5 +190,11 @@ public class MainActivity extends Activity implements DataUploadCallback
 				Toast.makeText(MainActivity.this, "Error transferring data", Toast.LENGTH_LONG).show();
 			}
 		});
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		//client.disconnect();
 	}
 }

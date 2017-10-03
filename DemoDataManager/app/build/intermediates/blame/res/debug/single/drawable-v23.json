@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/DemoDataManager1/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
-        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v23/abc_control_background_material.xml"
-    },
-    {
-        "merged": "/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v23/abc_control_background_material.xml"
     }
 ]

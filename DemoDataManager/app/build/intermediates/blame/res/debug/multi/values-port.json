@@ -1,30 +1,6 @@
 [
     {
-        "outputFile": "/Users/bharu/CS690-PROJECTS/activity_analyzer/DemoDataManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 55,
-                    "endOffset": 106
-                },
-                "from": {
-                    "file": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/values-port/values-port.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 55,
-                        "endOffset": 106
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/bharu/CS690-PROJECTS/DemoDataManager1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+        "outputFile": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
         "map": [
             {
                 "to": {
