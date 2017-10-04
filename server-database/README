@@ -28,4 +28,5 @@ In mongo shell
     3.8 exit
 
 Import Json file
-mongoimport --db activityAnalyzerDB --collection sensors --file /DemoDataManager/DataCollected/SensorDataJson/Accelerometer/1506055760997.json
+mongoimport --db activityAnalyzerDB --collection
+sensors --file /DemoDataManager/DataCollected/SensorDataJson/Accelerometer/1506055760997.json --jsonArray

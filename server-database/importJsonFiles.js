@@ -1,6 +1,3 @@
-colls=(DemoDataManager/DataCollected/SensorDataJson/Accelerometer)
-
-for c in ${colls[@]}
-do
-  mongoimport -d mydb -c $c.json
-done
+for filename in
+DemoDataManager/DataCollected/SensorDataJson/Accelerometer;
+do mongoimport -d activityAnalyzerDB -c $filename;  done
