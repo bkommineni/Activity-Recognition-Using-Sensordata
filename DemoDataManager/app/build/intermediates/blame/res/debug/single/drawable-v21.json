@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
         "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
         "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
@@ -8,11 +12,23 @@
         "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
+        "merged": "/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
         "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
         "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/notification_action_background.xml"
     },
     {
+        "merged": "/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
         "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
         "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/res/drawable-v21/abc_edit_text_material.xml"
     }
 ]
