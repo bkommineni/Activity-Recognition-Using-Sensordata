@@ -11,6 +11,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.emotionsense.demo.data.loggers.AsyncEncryptedFiles;
 import com.emotionsense.demo.data.loggers.AsyncWiFiOnlyEncryptedDatabase;
 import com.emotionsense.demo.data.loggers.MyDataLogger;
@@ -21,6 +25,8 @@ import com.ubhave.datahandler.transfer.DataUploadCallback;
 import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.data.SensorData;
 import com.ubhave.sensormanager.sensors.SensorUtils;
+
+import Utils.VolleyNetwork;
 
 public class MainActivity extends Activity implements DataUploadCallback
 {
@@ -54,42 +60,63 @@ public class MainActivity extends Activity implements DataUploadCallback
 		setContentView(R.layout.activity_main);
 		//client.connect();
 
+//		try
+//		{
+//			URL url = new URL("http://localhost:9999/data");
+//			conn = (HttpURLConnection) url.openConnection();
+//			// TODO: change this line of code to change the type of data logger
+//			// Note: you shouldn't have more than one logger!
+////			logger = AsyncEncryptedDatabase.getInstance();
+////			logger = AsyncWiFiOnlyEncryptedDatabase.getInstance();
+////			logger = AsyncEncryptedFiles.getInstance();
+////			logger = AsyncUnencryptedDatabase.getInstance();
+////			logger = AsyncUnencryptedFiles.getInstance();
+////			logger = StoreOnlyEncryptedDatabase.getInstance();
+////			logger = StoreOnlyEncryptedFiles.getInstance();
+////			logger = StoreOnlyUnencryptedDatabase.getInstance();
+////			logger = StoreOnlyUnencryptedFiles.getInstance();
+//			logger = MyDataLogger.getInstance();
+//			sensorManager = ESSensorManager.getSensorManager(this);
+//
+//			// Example of starting some sensing in onCreate()
+//			// Collect a single sample from the listed pull sensors
+//			pullThreads = new SenseOnceThread[pullSensors.length];
+//			for (int i = 0; i < pullSensors.length; i++)
+//			{
+//				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i],conn);
+//				Log.d("debug",Integer.toString(pullSensors[i]));
+//				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+//				pullThreads[i].start();
+//			}
+//		}
+//		catch (Exception e)
+//		{
+//			Toast.makeText(this, "" + e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+//			Log.d(LOG_TAG, e.getLocalizedMessage());
+//			e.printStackTrace();
+//		}
+		// VolleyNetwork instance to connect to the server.
+		sendFunction("http://10.0.2.2:3000/");
+	}
 
-		try
-		{
-			URL url = new URL("http://localhost:9999/data");
-			conn = (HttpURLConnection) url.openConnection();
-			// TODO: change this line of code to change the type of data logger
-			// Note: you shouldn't have more than one logger!
-//			logger = AsyncEncryptedDatabase.getInstance();
-//			logger = AsyncWiFiOnlyEncryptedDatabase.getInstance();
-//			logger = AsyncEncryptedFiles.getInstance();
-//			logger = AsyncUnencryptedDatabase.getInstance();
-//			logger = AsyncUnencryptedFiles.getInstance();
-//			logger = StoreOnlyEncryptedDatabase.getInstance();
-//			logger = StoreOnlyEncryptedFiles.getInstance();
-//			logger = StoreOnlyUnencryptedDatabase.getInstance();
-//			logger = StoreOnlyUnencryptedFiles.getInstance();
-			logger = MyDataLogger.getInstance();
-			sensorManager = ESSensorManager.getSensorManager(this);
+	private void sendFunction(String url) {
+		StringRequest stringRequest = getStringRequest(url);
+		VolleyNetwork.getInstance(getApplicationContext()).addToRequestQueue(stringRequest);
+	}
 
-			// Example of starting some sensing in onCreate()
-			// Collect a single sample from the listed pull sensors
-			pullThreads = new SenseOnceThread[pullSensors.length];
-			for (int i = 0; i < pullSensors.length; i++)
-			{
-				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i],conn);
-				Log.d("debug",Integer.toString(pullSensors[i]));
-				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-				pullThreads[i].start();
+	private StringRequest getStringRequest(String url) {
+		return new StringRequest(Request.Method.POST, url,
+				new Response.Listener<String>() {
+					@Override
+					public void onResponse(String response) {
+						Toast.makeText(getApplicationContext(), response, Toast.LENGTH_LONG).show();
+					}
+				}, new Response.ErrorListener() {
+			@Override
+			public void onErrorResponse(VolleyError error) {
+				Toast.makeText(getApplicationContext(),"Connection Error: Cannot reach the server!", Toast.LENGTH_LONG).show();
 			}
-		}
-		catch (Exception e)
-		{
-			Toast.makeText(this, "" + e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
-			Log.d(LOG_TAG, e.getLocalizedMessage());
-			e.printStackTrace();
-		}
+		});
 	}
 
 	@Override
@@ -138,6 +165,7 @@ public class MainActivity extends Activity implements DataUploadCallback
 				List<SensorData> recentData = dataManager.getRecentSensorData(pushSensor, startTime);
 				Toast.makeText(this, "Recent "+SensorUtils.getSensorName(pushSensor)+": " + recentData.size(), Toast.LENGTH_LONG).show();
 			}
+
 		}
 		catch (Exception e)
 		{

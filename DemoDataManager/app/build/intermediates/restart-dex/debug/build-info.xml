@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="23"
-    build-mode="FULL"
-    density="xxhdpi"
+    abi="x86"
+    api-level="25"
+    build-mode="COLD"
+    density="560dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506968408847"
-    token="-7472700072078759411"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="1507094202136"
+    token="-6880288103579826853"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -18,88 +18,77 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="243" />
+        duration="0" />
     <task
         name="verifier"
-        duration="54" />
-
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/outputs/apk/app-debug.apk"
-        type="SPLIT_MAIN" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1506968408847"
+        timestamp="1507087842402"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/outputs/apk/app-debug.apk"
+            location="H:\activity_analyzer\DemoDataManager\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1507094044195"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1507094164734"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="H:\activity_analyzer\DemoDataManager\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1507094202136"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

@@ -1,4 +1,4 @@
-#Mon Oct 02 11:20:17 PDT 2017
-base.0=/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9
+#Tue Oct 03 22:16:07 PDT 2017
+base.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9
 renamed.0=classes.dex
-file.0=/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex
+file.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9\\classes.dex

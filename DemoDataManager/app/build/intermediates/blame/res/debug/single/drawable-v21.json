@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/abc_edit_text_material.xml"
+        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
-        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/notification_action_background.xml"
+        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/drawable-v21/abc_btn_colored_material.xml"
+        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     }
 ]

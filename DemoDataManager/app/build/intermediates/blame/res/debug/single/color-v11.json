@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]
