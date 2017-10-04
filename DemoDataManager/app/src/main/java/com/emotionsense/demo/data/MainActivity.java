@@ -1,16 +1,32 @@
 package com.emotionsense.demo.data;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.Socket;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.DownloadManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.emotionsense.demo.data.loggers.AsyncEncryptedFiles;
 import com.emotionsense.demo.data.loggers.AsyncWiFiOnlyEncryptedDatabase;
 import com.emotionsense.demo.data.loggers.MyDataLogger;
@@ -22,17 +38,23 @@ import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.data.SensorData;
 import com.ubhave.sensormanager.sensors.SensorUtils;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+
 public class MainActivity extends Activity implements DataUploadCallback
 {
 	private final static String LOG_TAG = "MainActivity";
 
 	private AbstractDataLogger logger;
 	private ESSensorManager sensorManager;
-	
 	private SubscribeThread[] subscribeThreads;
 	private SenseOnceThread[] pullThreads;
 	private HttpURLConnection conn = null;
 
+	//ADD BY SURADA
+	String server_url = "http://localhost:9999/";
+	private String response = null;
 	//Client client = new Client("http://localhost:9999/data",9999);
 
 	// TODO: add push sensors you want to sense from here
@@ -52,45 +74,27 @@ public class MainActivity extends Activity implements DataUploadCallback
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		//client.connect();
+
+		String Url = "http://10.0.2.2:9999/";
+
+		StringRequest stringRequest = new StringRequest(Request.Method.POST, Url,
+				new Response.Listener<String>() {
+					@Override
+					public void onResponse(String response) {
+						Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
 
 
-		try
-		{
-			URL url = new URL("http://localhost:9999/data");
-			conn = (HttpURLConnection) url.openConnection();
-			// TODO: change this line of code to change the type of data logger
-			// Note: you shouldn't have more than one logger!
-//			logger = AsyncEncryptedDatabase.getInstance();
-//			logger = AsyncWiFiOnlyEncryptedDatabase.getInstance();
-//			logger = AsyncEncryptedFiles.getInstance();
-//			logger = AsyncUnencryptedDatabase.getInstance();
-//			logger = AsyncUnencryptedFiles.getInstance();
-//			logger = StoreOnlyEncryptedDatabase.getInstance();
-//			logger = StoreOnlyEncryptedFiles.getInstance();
-//			logger = StoreOnlyUnencryptedDatabase.getInstance();
-//			logger = StoreOnlyUnencryptedFiles.getInstance();
-			logger = MyDataLogger.getInstance();
-			sensorManager = ESSensorManager.getSensorManager(this);
+					}
+				},
+				new Response.ErrorListener() {
+					@Override
+					public void onErrorResponse(VolleyError error) {
+						// Handle error
+					}
+				});
 
-			// Example of starting some sensing in onCreate()
-			// Collect a single sample from the listed pull sensors
-			pullThreads = new SenseOnceThread[pullSensors.length];
-			for (int i = 0; i < pullSensors.length; i++)
-			{
-				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i],conn);
-				Log.d("debug",Integer.toString(pullSensors[i]));
-				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-				pullThreads[i].start();
-			}
-		}
-		catch (Exception e)
-		{
-			Toast.makeText(this, "" + e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
-			Log.d(LOG_TAG, e.getLocalizedMessage());
-			e.printStackTrace();
-		}
 	}
+
 
 	@Override
 	public void onResume()
@@ -122,6 +126,7 @@ public class MainActivity extends Activity implements DataUploadCallback
 	public void onSearchClicked(final View view)
 	{
 		// Counts the number of sensor events from the last 60 seconds
+
 		try
 		{
 			long startTime = System.currentTimeMillis() - (1000L * 60);

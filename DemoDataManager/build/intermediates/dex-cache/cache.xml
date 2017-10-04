@@ -2,112 +2,148 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="af5c426c4c9747ca142dc04ae4919556bafed05b">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_962a1cce1db45f5e81a50edf3e74b8137ba43f54/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/httpmime-4.1.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/10/httpmime-4.1.2_7016deee71053f1bdce0ec7b21880d2d44d12342/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/sqlcipher.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ce76a34bb71db637e8b171d8a4df0e865463d786">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/10/sqlcipher_f5a2cb7b0ecd24b2c772bbc273d185d67d79f574/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/bharu/.android/build-cache/a57c50e79842450f2de05392bcf9242b3eb81c48/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3bcceda156cc07256ec58a93c276bb81f5d01439">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7d6379b1098954080ad2214f5e5746a55289bc3d/classes.dex" />
-    </item>
-    <item
         is-multidex="false"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/httpmime-4.1.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/httpmime-4.1.2_7016deee71053f1bdce0ec7b21880d2d44d12342.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/sqlcipher.jar"
+        jar="/Users/gforgam/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/libs/sqlcipher.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="ce76a34bb71db637e8b171d8a4df0e865463d786">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/sqlcipher_f5a2cb7b0ecd24b2c772bbc273d185d67d79f574.jar" />
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/sqlcipher_dbb3c6798209d009af083f9de96013e9af36d683.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/classes.jar"
+        jar="/Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="3a08a680b732a5dd3fbdd5e9742f55a2c5b15c8b">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_62bd9450ef3b74e0c6326d72b114ededd4422b88.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3a08a680b732a5dd3fbdd5e9742f55a2c5b15c8b">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_62bd9450ef3b74e0c6326d72b114ededd4422b88/classes.dex" />
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_d5964346abcfd7e7ae781faf7b90e5143e05a5c9.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/bharu/.android/build-cache/a57c50e79842450f2de05392bcf9242b3eb81c48/output/jars/classes.jar"
+        jar="/Users/gforgam/.android/build-cache/5760e1b74b78a29942e3dc3a84ab340dd49f2445/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="3bcceda156cc07256ec58a93c276bb81f5d01439">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_7d6379b1098954080ad2214f5e5746a55289bc3d.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_febcfbd16edc0565b1f5fd7cc3b829e79e340da5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/ziputils-1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="edae632aa26bfebf26e2b5d6c495f20f33482ece">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/10/ziputils-1.1_cb730a650987e13f5dad7f1598307b1ba39aca5f/classes.dex" />
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_3c838d7c68165f650859caa7e9c4879bbc2d1b64.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/bharu/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/ziputils-1.1.jar"
+        jar="/Users/gforgam/.android/build-cache/4f63138f7e92b05780442c3a5c6fffbecc902a2b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_38815e0f318dac32bd123f559b4bff0db188f9a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/7dc9f4d0472cdab41c9a407ef3bc9b58b330f146/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_b65244ddc1b55843f39f12caaaf75db0e440393c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/954bd701ab5a38daa8e4037b01eac0a5a7a94995/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_dec20b1148af3272ab3fcdaab314e63a1d84c153.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/libs/ziputils-1.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="edae632aa26bfebf26e2b5d6c495f20f33482ece">
-        <dex dex="/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/ziputils-1.1_cb730a650987e13f5dad7f1598307b1ba39aca5f.jar" />
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/ziputils-1.1_300cd65bc6086264b5c8da45af568eda5f672dde.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/39a81993eaa85126b0f3f3bf5ce1f3a69e08650b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_635ea9c60ec82dc50d9bf5e91a62848dc4bec22b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/d22d6ded61850a1ac3896ad290369da6e134b9ce/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_e124d55f61d1cb3207f46dae70f66e72707364da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_677de12b5f55106323dd1e6440605f35cd26fe1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/libs/httpmime-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/httpmime-4.1.2_07aa2d927e021bafd31bfe6f6e3c89dd76317ac2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/e79c2c7cb6c7bdcb49f3d33be490fa8ff2083770/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_e7d6baf67442b5702f331aea81d57a8aa80d84fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3a08a680b732a5dd3fbdd5e9742f55a2c5b15c8b">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_6d5193eb560dd1a3ce3f06e71c76e1b1ceb14ad6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/da2bea8a4cdb7b5acb350b1cf5bd7ecbe0e94905/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_f8c2d1b217fed47234a73e25fe935e88d531ccb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/258137c6b582066383362e211721f8d39a88bbf5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_482dbd933fe06baffe1f44431060bffcdd37772e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gforgam/.android/build-cache/435d7340200e45a00950c8b36582083ca43fcbd5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/pre-dexed/debug/classes_d83d57cf6766cc9e8c2246cb50bc7ee43d4d0c40.jar" />
     </item>
 
 </items>

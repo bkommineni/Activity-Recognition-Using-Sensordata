@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="SensorDataManager-debug-unspecified">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/ziputils-1.1.jar!/" />
-      <root url="jar://$USER_HOME$/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/sqlcipher.jar!/" />
-      <root url="jar://$USER_HOME$/.android/build-cache/24b5be4ac12afbc9bb8d12b3feb55ba27288074b/output/jars/libs/httpmime-4.1.2.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/libs/ziputils-1.1.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/libs/sqlcipher.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/33098e7b3284ea89ede14eb735491aa4174e6598/output/jars/libs/httpmime-4.1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

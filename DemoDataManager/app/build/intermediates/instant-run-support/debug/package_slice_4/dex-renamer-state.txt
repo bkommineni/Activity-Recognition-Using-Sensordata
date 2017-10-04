@@ -1,4 +1,4 @@
-#Mon Oct 02 11:20:17 PDT 2017
-base.0=/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
+#Tue Oct 03 17:45:48 PDT 2017
+base.0=/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
 renamed.0=classes.dex
-file.0=/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex
+file.0=/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex
