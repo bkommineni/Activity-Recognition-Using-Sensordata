@@ -1,5 +1,6 @@
 //Receive data from JSON POST and insert into MongoDB
 
+
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -16,9 +17,10 @@ MongoClient.connect('mongodb://localhost:27017/activityAnalyzerDB', function (er
 	db = database;
 	console.log('Connected to MongoDB');
 	//Start app only after connection is ready
-	app.listen(3000);
+	app.listen();
    }
  });
+
 
 app.use(bodyParser.json())
 

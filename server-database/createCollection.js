@@ -1,7 +1,7 @@
-//var MongoClient = require('mongodb').MongoClient
-//    , format = require('util').format;
+var MongoClient = require('mongodb').MongoClient
+   , format = require('util').format;
 
- var MongoClient= require('connectDB.js');
+// var MongoClient= require('connectDB.js');
 
 MongoClient.connect('mongodb://127.0.0.1:27017/activityAnalyzerDB', function (err, db) {
     db.collection('Users', function (err, collection) {

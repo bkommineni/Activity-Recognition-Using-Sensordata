@@ -1,5 +1,5 @@
 {
-  "name": "database",
+  "name": "activityanalyzerdb",
   "version": "1.0.0",
   "description": "MongoDB",
   "main": "connectDB.js",
@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "jsonfile": "^4.0.0"
   },
   "devDependencies": {}
 }
