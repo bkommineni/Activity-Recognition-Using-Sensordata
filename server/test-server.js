@@ -11,6 +11,7 @@ httpserver.createServer(function (request,response)
     	response.end(body);
   	});
 	response.end('THE RESPOSNE FROM THE SERVER!!!!!!!!!!!!!!');
+	console.log(request)
 }
 ).listen(3000);
 

@@ -1,7 +1,4 @@
-#Tue Oct 03 19:17:58 PDT 2017
-base.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6727e526e66a0296887d61ad9d583471faf5f6be
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_996ea32ab7c6756724cfcdc2dc33d1791625977c\\classes.dex
-base.1=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_996ea32ab7c6756724cfcdc2dc33d1791625977c
-file.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6727e526e66a0296887d61ad9d583471faf5f6be\\classes.dex
+#Fri Oct 06 14:34:53 PDT 2017
+base.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

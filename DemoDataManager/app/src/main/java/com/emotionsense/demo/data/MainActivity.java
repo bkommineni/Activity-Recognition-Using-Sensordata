@@ -60,8 +60,8 @@ public class MainActivity extends Activity implements DataUploadCallback
 		setContentView(R.layout.activity_main);
 		//client.connect();
 
-//		try
-//		{
+		try
+		{
 //			URL url = new URL("http://localhost:9999/data");
 //			conn = (HttpURLConnection) url.openConnection();
 //			// TODO: change this line of code to change the type of data logger
@@ -75,28 +75,28 @@ public class MainActivity extends Activity implements DataUploadCallback
 ////			logger = StoreOnlyEncryptedFiles.getInstance();
 ////			logger = StoreOnlyUnencryptedDatabase.getInstance();
 ////			logger = StoreOnlyUnencryptedFiles.getInstance();
-//			logger = MyDataLogger.getInstance();
-//			sensorManager = ESSensorManager.getSensorManager(this);
+			logger = MyDataLogger.getInstance();
+			sensorManager = ESSensorManager.getSensorManager(this);
 //
 //			// Example of starting some sensing in onCreate()
 //			// Collect a single sample from the listed pull sensors
-//			pullThreads = new SenseOnceThread[pullSensors.length];
-//			for (int i = 0; i < pullSensors.length; i++)
-//			{
-//				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i],conn);
-//				Log.d("debug",Integer.toString(pullSensors[i]));
-//				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-//				pullThreads[i].start();
-//			}
-//		}
-//		catch (Exception e)
-//		{
-//			Toast.makeText(this, "" + e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
-//			Log.d(LOG_TAG, e.getLocalizedMessage());
-//			e.printStackTrace();
-//		}
+			pullThreads = new SenseOnceThread[pullSensors.length];
+			for (int i = 0; i < pullSensors.length; i++)
+			{
+				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i],conn);
+				Log.d("debug",Integer.toString(pullSensors[i]));
+				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+				pullThreads[i].start();
+			}
+		}
+		catch (Exception e)
+		{
+			Toast.makeText(this, "" + e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+			Log.d(LOG_TAG, e.getLocalizedMessage());
+			e.printStackTrace();
+		}
 		// VolleyNetwork instance to connect to the server.
-		sendFunction("http://10.0.2.2:3000/");
+		sendFunction("http://10.1.50.224:3000/");
 	}
 
 	private void sendFunction(String url) {
@@ -104,6 +104,7 @@ public class MainActivity extends Activity implements DataUploadCallback
 		VolleyNetwork.getInstance(getApplicationContext()).addToRequestQueue(stringRequest);
 	}
 
+	// Change to JSONObjectRequest to send the JSON Request with the data that we have
 	private StringRequest getStringRequest(String url) {
 		return new StringRequest(Request.Method.POST, url,
 				new Response.Listener<String>() {
@@ -140,8 +141,7 @@ public class MainActivity extends Activity implements DataUploadCallback
 		super.onPause();
 		
 		// Don't forget to stop sensing when the app pauses
-		for (SubscribeThread thread : subscribeThreads)
-		{
+		for (SubscribeThread thread : subscribeThreads) {
 			thread.stopSensing();
 		}
 	}

@@ -8,6 +8,7 @@ import com.android.volley.toolbox.Volley;
 
 /**
  * Created by Anjani Bajaj on 10/3/2017.
+ * This is a singleton class handling all the network requests.
  */
 
 public class VolleyNetwork {
