@@ -99,13 +99,15 @@ public class MainActivity extends Activity implements DataUploadCallback
 		sendFunction("http://10.1.50.224:3000/");
 	}
 
-	private void sendFunction(String url) {
+	private void sendFunction(String url)
+    {
 		StringRequest stringRequest = getStringRequest(url);
 		VolleyNetwork.getInstance(getApplicationContext()).addToRequestQueue(stringRequest);
 	}
 
 	// Change to JSONObjectRequest to send the JSON Request with the data that we have
-	private StringRequest getStringRequest(String url) {
+	private StringRequest getStringRequest(String url)
+    {
 		return new StringRequest(Request.Method.POST, url,
 				new Response.Listener<String>() {
 					@Override
@@ -141,7 +143,8 @@ public class MainActivity extends Activity implements DataUploadCallback
 		super.onPause();
 		
 		// Don't forget to stop sensing when the app pauses
-		for (SubscribeThread thread : subscribeThreads) {
+		for (SubscribeThread thread : subscribeThreads)
+		{
 			thread.stopSensing();
 		}
 	}
