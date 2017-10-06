@@ -1,0 +1,22 @@
+{
+  "name": "activityAnalyzerDB",
+  "version": "1.0.0",
+  "description": "activityAnalyzerDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cequencer/activity_analyzer.git"
+  },
+  "dependencies" : {"express":"*"
+                  ,"body-parser":"*"
+                  ,"mongoose":"*"},
+  "author": "Surada Lerkpatomsak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cequencer/activity_analyzer/issues"
+  },
+  "homepage": "https://github.com/cequencer/activity_analyzer#readme"
+}
