@@ -2,18 +2,29 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var fs = require('fs');
 
 Sensors = require('./models/sensors');
-Users = require('./models/Users')
 // Connect to Mongoose
 //mongoose.connect('mongodb://localhost/backend');
 var db = mongoose.connection.openUri('mongodb://localhost/activityAnalyzerDB');
 
 app.get('/',function(req,res){
-    res.send('Use1');
+    var content = fs.readFileSync("../DemoDataManager/DataCollected/SensorDataJson/Accelerometer/1506055760997.json");
+    var strLines = content.toString().split("\n");
+    for (var i in strLines) {
+      var sensor = JSON.parse(strLines[i]);
+      Sensors.addSensor(sensor,function(err,sensor){
+        if(err){
+            throw err;
+        }
+      });
+    }
+    res.send('Add Data to Database ...');
 });
 
-app.get('/api/sensors',function(req,res){
+app.get('/api/getsensors',function(req,res){
+    res.send('Sensor Data from Database ...');
     Sensors.getSensors(function(err,sensors){
        if(err){
         throw err;
@@ -22,14 +33,9 @@ app.get('/api/sensors',function(req,res){
     });
 });
 
-app.get('/api/Users',function(req,res){
-    Users.getUsers(function(err,Users){
-       if(err){
-        throw err;
-       }
-       res.json(Users);
-    });
 
-});
+// READ DATA from JSON File
+
+
 app.listen(27118);
 console.log('Running on port 27118...');
