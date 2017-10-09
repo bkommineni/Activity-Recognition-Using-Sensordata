@@ -32,6 +32,9 @@ var sensorsSchema = mongoose.Schema({
     },
     sampleLengthMillis:{
         type : Number
+    },
+    label:{
+        type : String
     }
 }, { versionKey: false });
 
@@ -40,8 +43,8 @@ var sensors
 = mongoose.model('sensors', sensorsSchema);
 
 // get sensors data from mongoDB
-module.exports.getSensors = function(callback,limit){
-    sensors.find(callback).limit(limit);
+module.exports.getSensors = function(sensor,callback){
+    sensors.find(callback);
 }
 
 //add sensors data to MongoDB

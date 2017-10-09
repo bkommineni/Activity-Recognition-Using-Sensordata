@@ -14,7 +14,7 @@ app.get('/',function(req,res){
     var strLines = content.toString().split("\n");
     for (var i in strLines) {
       var sensor = JSON.parse(strLines[i]);
-      Sensors.addSensor(sensor,function(err,sensor){
+      Sensors.addSensor(sensor,function(err,sensors){
         if(err){
             throw err;
         }
@@ -23,7 +23,7 @@ app.get('/',function(req,res){
     res.send('Add Data to Database ...');
 });
 
-app.get('/api/getsensors',function(req,res){
+app.get('/getsensors',function(req,res){
     res.send('Sensor Data from Database ...');
     Sensors.getSensors(function(err,sensors){
        if(err){
@@ -32,9 +32,6 @@ app.get('/api/getsensors',function(req,res){
        res.json(sensors);
     });
 });
-
-
-// READ DATA from JSON File
 
 
 app.listen(27118);
