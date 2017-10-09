@@ -1,2 +1,2 @@
 # activity_analyzer
-Hello
+Run "nodemon" to keep server.js working
