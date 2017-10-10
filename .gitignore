@@ -1,8 +1,7 @@
 *.bin
 *.class
 *.iml
-DemoDataManager/build/android-profile/
-DemoDataManager/app/build/
+DemoDataManager/build/
 DemoDataManager/app/build/
 DemoDataManager/.gradle/
 DemoDataManager/.idea/

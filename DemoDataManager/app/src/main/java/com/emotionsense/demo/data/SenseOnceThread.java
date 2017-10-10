@@ -62,7 +62,7 @@ public class SenseOnceThread extends Thread
 			if (data != null)
 			{
 				JSONObject jsonSensorData = logger.getJSONSensorData(data);
-				sendFunction("http://10.1.50.224:3000/",jsonSensorData);
+				sendFunction("http://10.0.0.37:3000/",jsonSensorData);
 				System.out.println("json sensor data: " + jsonSensorData.toString());
 				toast("Finished sensing.");
 				Log.d("Test", "Finished sensing: "+SensorUtils.getSensorName(sensorType));
