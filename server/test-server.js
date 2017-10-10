@@ -1,4 +1,5 @@
 var httpserver =  require("http");
+var bodyParser = require('body-parser');
 
 httpserver.createServer(function (request,response)
 {
@@ -11,7 +12,7 @@ httpserver.createServer(function (request,response)
     	response.end(body);
   	});
 	response.end('THE RESPOSNE FROM THE SERVER!!!!!!!!!!!!!!');
-	console.log(request)
+  console.log(request);  
 }
 ).listen(3000);
 

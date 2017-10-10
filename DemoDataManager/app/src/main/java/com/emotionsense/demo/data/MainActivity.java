@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.emotionsense.demo.data.loggers.MyDataLogger;
 import com.ubhave.datahandler.ESDataManager;
@@ -21,6 +22,8 @@ import com.ubhave.datahandler.transfer.DataUploadCallback;
 import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.data.SensorData;
 import com.ubhave.sensormanager.sensors.SensorUtils;
+
+import org.json.JSONObject;
 
 import Utils.VolleyNetwork;
 
@@ -61,6 +64,7 @@ public class MainActivity extends Activity implements DataUploadCallback
 				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
 				pullThreads[i].start();
 			}
+
 		}
 		catch (Exception e)
 		{
@@ -69,30 +73,6 @@ public class MainActivity extends Activity implements DataUploadCallback
 			e.printStackTrace();
 		}
 		// VolleyNetwork instance to connect to the server.
-		sendFunction("http://10.1.50.224:3000/");
-	}
-
-	private void sendFunction(String url)
-    {
-		StringRequest stringRequest = getStringRequest(url);
-		VolleyNetwork.getInstance(getApplicationContext()).addToRequestQueue(stringRequest);
-	}
-
-	// Change to JSONObjectRequest to send the JSON Request with the data that we have
-	private StringRequest getStringRequest(String url)
-    {
-		return new StringRequest(Request.Method.POST, url,
-				new Response.Listener<String>() {
-					@Override
-					public void onResponse(String response) {
-						Toast.makeText(getApplicationContext(), response, Toast.LENGTH_LONG).show();
-					}
-				}, new Response.ErrorListener() {
-			@Override
-			public void onErrorResponse(VolleyError error) {
-				Toast.makeText(getApplicationContext(),"Connection Error: Cannot reach the server!", Toast.LENGTH_LONG).show();
-			}
-		});
 	}
 
 	@Override
