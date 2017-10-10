@@ -8,26 +8,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.emotionsense.demo.data.MainActivity" >
 
-    <TextView
-        android:id="@+id/textLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    
     <Button
-        android:id="@+id/search"
+        android:id="@+id/Walk"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/search"
-        android:onClick="onSearchClicked"
-        android:layout_alignParentBottom="true" />
-    
+        android:text="@string/walk"
+        android:onClick="onWalkClicked"
+        android:layout_above="@id/Run" />
+
     <Button
-        android:id="@+id/flush"
+        android:id="@+id/Run"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/flush"
-        android:onClick="onFlushClicked"
-        android:layout_above="@id/search" />
+        android:text="@string/run"
+        android:onClick="onRunClicked"
+        android:layout_below="@id/Walk" />
+    
+
 
 </RelativeLayout>
