@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
+    compile 'com.android.volley:volley:1.0.0'
     compile project(':SensorDataManager-debug')
     compile project(':SensorManager-debug')
-    compile 'com.android.volley:volley:1.0.0'
 }

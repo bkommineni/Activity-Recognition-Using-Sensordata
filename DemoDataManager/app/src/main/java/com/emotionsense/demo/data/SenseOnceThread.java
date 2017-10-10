@@ -4,11 +4,14 @@ import android.app.Activity;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.ubhave.dataformatter.json.JSONFormatter;
 import com.ubhave.datahandler.loggertypes.AbstractDataLogger;
 import com.ubhave.sensormanager.ESException;
 import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.data.SensorData;
 import com.ubhave.sensormanager.sensors.SensorUtils;
+
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -22,17 +25,13 @@ public class SenseOnceThread extends Thread
 	private final Activity resultScreen;
 	private final ESSensorManager sensorManager;
 	private final AbstractDataLogger logger;
-	//private Client clientSocket = null;
-	private HttpURLConnection conn = null;
 	
-	public SenseOnceThread(final Activity resultScreen, final ESSensorManager sensorManager, AbstractDataLogger logger, int sensorType,
-							HttpURLConnection conn)
+	public SenseOnceThread(final Activity resultScreen, final ESSensorManager sensorManager, AbstractDataLogger logger, int sensorType)
 	{
 		this.resultScreen = resultScreen;
 		this.sensorManager = sensorManager;
 		this.logger = logger;
 		this.sensorType = sensorType;
-		this.conn = conn;
 	}
 	
 	private void toast(final String message)
@@ -53,40 +52,11 @@ public class SenseOnceThread extends Thread
 		try
 		{
 			SensorData data = sensorManager.getDataFromSensor(sensorType);
-			//clientSocket.send("hi server!!!");
-			try {
-				conn.setDoOutput(true);
-				conn.setRequestMethod("POST");
-				conn.setRequestProperty("Content-Type", "application/json");
-
-				String input = data.toString();
-
-				OutputStream os = conn.getOutputStream();
-				os.write(input.getBytes());
-				os.flush();
-
-				if (conn.getResponseCode() != HttpURLConnection.HTTP_CREATED) {
-					throw new RuntimeException("Failed : HTTP error code : "
-							+ conn.getResponseCode());
-				}
-
-				BufferedReader br = new BufferedReader(new InputStreamReader(
-						(conn.getInputStream())));
-
-				String output;
-				System.out.println("Output from Server .... \n");
-				while ((output = br.readLine()) != null) {
-					System.out.println(output);
-				}
-			}
-			catch (Exception e)
-			{
-				e.printStackTrace();
-			}
 			Log.d("data",data.toString());
 			if (data != null)
 			{
-				logger.logSensorData(data);
+				JSONObject jsonSensorData = logger.getJSONSensorData(data);
+				System.out.println("json sensor data: " + jsonSensorData.toString());
 				toast("Finished sensing.");
 				Log.d("Test", "Finished sensing: "+SensorUtils.getSensorName(sensorType));
 			}
@@ -95,7 +65,6 @@ public class SenseOnceThread extends Thread
 				toast("Finished sensing: null data");
 				Log.d("Test", "Finished sensing: null data");
 			}
-			
 		}
 		catch (ESException e)
 		{
