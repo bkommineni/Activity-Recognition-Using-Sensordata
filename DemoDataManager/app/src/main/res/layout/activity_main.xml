@@ -13,17 +13,17 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/walk"
-        android:onClick="onWalkClicked"
-        android:layout_above="@id/Run" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp" />
 
     <Button
         android:id="@+id/Run"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/run"
-        android:onClick="onRunClicked"
-        android:layout_below="@id/Walk" />
-    
-
-
+        android:layout_marginTop="133dp"
+        android:layout_below="@+id/Walk"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
 </RelativeLayout>

@@ -52,18 +52,30 @@ public class SenseOnceThread extends Thread
 		});
 	}
 
+	public void startSensing()
+	{
+		try
+		{
+			sensorManager.startSensingData(sensorType);
+		}
+		catch (ESException e)
+		{
+			toast(e.getLocalizedMessage());
+			e.printStackTrace();
+		}
+	}
+
 	@Override
 	public void run()
 	{
 		try
 		{
-			SensorData data = sensorManager.getDataFromSensor(sensorType);
+			SensorData data = sensorManager.stopSensingData(sensorType);
 			Log.d("data",data.toString());
 			if (data != null)
 			{
 				JSONObject jsonSensorData = logger.getJSONSensorData(data);
 				sendFunction("http://10.0.0.37:3000/",jsonSensorData);
-				System.out.println("json sensor data: " + jsonSensorData.toString());
 				toast("Finished sensing.");
 				Log.d("Test", "Finished sensing: "+SensorUtils.getSensorName(sensorType));
 			}
