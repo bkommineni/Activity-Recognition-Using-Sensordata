@@ -4,14 +4,21 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.emotionsense.demo.data.loggers.MyDataLogger;
 import com.ubhave.datahandler.loggertypes.AbstractDataLogger;
 import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.config.SensorConfig;
 import com.ubhave.sensormanager.sensors.SensorUtils;
+
+import org.json.JSONObject;
+
+import Utils.VolleyNetwork;
 
 public class MainActivity extends Activity
 {
@@ -54,7 +61,7 @@ public class MainActivity extends Activity
 		}
 	}
 
-	public void onWalkClick(final View view)
+	public void onWalkClick(final View view) throws Exception
     {
         if (isSensing)
         {
@@ -64,7 +71,9 @@ public class MainActivity extends Activity
                 pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
                 Log.d("debug",Integer.toString(pullSensors[i]));
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-                pullThreads[i].start();
+                JSONObject jsonSensorData = pullThreads[i].call();
+                jsonSensorData.put("label","walking");
+                sendFunction("http://10.0.0.37:3000/",jsonSensorData);
             }
         }
         else
@@ -82,7 +91,7 @@ public class MainActivity extends Activity
         isSensing = !isSensing;
     }
 
-    public void onRunClick(final View view)
+    public void onRunClick(final View view) throws Exception
     {
         if (isSensing)
         {
@@ -92,7 +101,9 @@ public class MainActivity extends Activity
                 pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
                 Log.d("debug",Integer.toString(pullSensors[i]));
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-                pullThreads[i].start();
+                JSONObject jsonSensorData = pullThreads[i].call();
+                jsonSensorData.put("label","running");
+                sendFunction("http://10.0.0.37:3000/",jsonSensorData);
             }
         }
         else
@@ -107,6 +118,32 @@ public class MainActivity extends Activity
             }
         }
         isSensing = !isSensing;
+    }
+
+    private void sendFunction(String url, JSONObject data)
+    {
+        JsonObjectRequest jsonObjectRequest = getJsonObjectRequest(url, data);
+        VolleyNetwork.getInstance(this.getApplicationContext()).addToRequestQueue(jsonObjectRequest);
+        Log.d("debug", "In the send Function");
+    }
+
+    // Change to JSONObjectRequest to send the JSON Request with the data that we have
+    private JsonObjectRequest getJsonObjectRequest(String url, JSONObject data)
+    {
+        return new JsonObjectRequest
+                (Request.Method.POST, url, data, new Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_SHORT).show();
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO Auto-generated method stub
+                    }
+                });
     }
 
 	@Override
