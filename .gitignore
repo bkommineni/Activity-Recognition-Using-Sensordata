@@ -2,3 +2,6 @@
 *.class
 *.iml
 *.xml
+DemoDataManager/build/android-profile/
+DemoDataManager/app/build/intermediates/
+DemoDataManager/.gradle/
