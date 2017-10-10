@@ -1,322 +1,162 @@
 [
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_action.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "H:\\activity_analyzer\\DemoDataManager\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_template_icon_group.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_part_time.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_template_media_custom.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_template_lines_media.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_action.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_media.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_simple.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_action_tombstone.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_media.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_action.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\notification_template_media_custom.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "H:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "H:\\mastersProject\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Anjani Bajaj\\.android\\build-cache\\98027ad832193d03b4a420f1252685c487282eb9\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DemoDataManager/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/bharu/.android/build-cache/383d684d61653562e7e20fdc031930435a579823/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     }
 ]
