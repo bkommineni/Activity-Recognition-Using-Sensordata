@@ -42,10 +42,10 @@ var sensors
 = module.exports
 = mongoose.model('sensors', sensorsSchema);
 
-// get sensors data from mongoDB
-module.exports.getSensors = function(sensor,callback){
-    sensors.find(callback);
-}
+//// get sensors data from mongoDB
+//module.exports.getSensors = function(sensor,callback){
+//    sensors.find(callback);
+//}
 
 //add sensors data to MongoDB
 module.exports.addSensor = function(sensor,callback){
