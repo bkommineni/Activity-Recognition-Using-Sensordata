@@ -33,14 +33,11 @@ public class MainActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-        Button startStopWalk = (Button) findViewById(R.id.Walk);
-        Button startStopRun  = (Button) findViewById(R.id.Run);
 
 		try
 		{
 			// TODO: change this line of code to change the type of data logger
             logger = MyDataLogger.getInstance();
-            //sensorManager = ESSensorManager.getSensorManager(this);
             SensorConfig sensorConfig = new SensorConfig();
             sensorConfig.setParameter("POST_SENSE_SLEEP_LENGTH_MILLIS", 120000L);
             sensorConfig.setParameter("MOTION_SAMPLING_DELAY", 1);
@@ -48,62 +45,6 @@ public class MainActivity extends Activity
             sensorConfig.setParameter("MOTION_THRESHOLD", 25);
             sensorManager = ESSensorManager.getSensorManagerWithCustomConfig(this,sensorConfig);
             pullThreads = new SenseOnceThread[pullSensors.length];
-            startStopWalk.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    if (isSensing)
-                    {
-                        //stopSensing
-                        for (int i = 0; i < pullSensors.length; i++)
-                        {
-                            pullThreads[i] = new SenseOnceThread(new MainActivity(), sensorManager, logger, pullSensors[i]);
-                            Log.d("debug",Integer.toString(pullSensors[i]));
-                            System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-                            pullThreads[i].start();
-                        }
-                    }
-                    else
-                    {
-                        //startSensing
-                        Log.d("debug","starting sensing");
-                        for (int i = 0; i < pullSensors.length; i++)
-                        {
-                            pullThreads[i] = new SenseOnceThread(new MainActivity(), sensorManager, logger, pullSensors[i]);
-                            Log.d("debug",Integer.toString(pullSensors[i]));
-                            System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-                            pullThreads[i].startSensing();
-                        }
-                    }
-                    isSensing = !isSensing;
-                }
-            });
-
-            startStopRun.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    if (isSensing)
-                    {
-                        //stopSensing
-                        for (int i = 0; i < pullSensors.length; i++)
-                        {
-                            pullThreads[i] = new SenseOnceThread(new MainActivity(), sensorManager, logger, pullSensors[i]);
-                            Log.d("debug",Integer.toString(pullSensors[i]));
-                            System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-                            pullThreads[i].start();
-                        }
-                    }
-                    else
-                    {
-                        //startSensing
-                        for (int i = 0; i < pullSensors.length; i++)
-                        {
-                            pullThreads[i] = new SenseOnceThread(new MainActivity(), sensorManager, logger, pullSensors[i]);
-                            Log.d("debug",Integer.toString(pullSensors[i]));
-                            System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-                            pullThreads[i].startSensing();
-                        }
-                    }
-                    isSensing = !isSensing;
-                }
-            });
 		}
 		catch (Exception e)
 		{
@@ -112,6 +53,61 @@ public class MainActivity extends Activity
 			e.printStackTrace();
 		}
 	}
+
+	public void onWalkClick(final View view)
+    {
+        if (isSensing)
+        {
+            //stopSensing
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                pullThreads[i].start();
+            }
+        }
+        else
+        {
+            //startSensing
+            Log.d("debug","starting sensing");
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                pullThreads[i].startSensing();
+            }
+        }
+        isSensing = !isSensing;
+    }
+
+    public void onRunClick(final View view)
+    {
+        if (isSensing)
+        {
+            //stopSensing
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                pullThreads[i].start();
+            }
+        }
+        else
+        {
+            //startSensing
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                pullThreads[i].startSensing();
+            }
+        }
+        isSensing = !isSensing;
+    }
 
 	@Override
 	protected void onDestroy() {
