@@ -10,3 +10,4 @@ libraries/SensorManager/.gradle/
 libraries/SensorDataManager/.idea/
 libraries/SensorDataManager/.gradle/
 libraries/SensorDataManager/build/intermediates/
+libraries/SensorDataManager/SensorManager/
