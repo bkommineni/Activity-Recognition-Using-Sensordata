@@ -1,6 +1,7 @@
 package com.emotionsense.demo.data;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -73,6 +74,7 @@ public class MainActivity extends Activity
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
                 JSONObject jsonSensorData = pullThreads[i].call();
                 jsonSensorData.put("label","walking");
+                view.findViewById(R.id.Walk).setBackgroundColor(Color.RED);
                 sendFunction("http://10.0.0.37:3000/",jsonSensorData);
             }
         }
@@ -80,6 +82,7 @@ public class MainActivity extends Activity
         {
             //startSensing
             Log.d("debug","starting sensing");
+            view.findViewById(R.id.Walk).setBackgroundColor(Color.GREEN);
             for (int i = 0; i < pullSensors.length; i++)
             {
                 pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
@@ -103,6 +106,7 @@ public class MainActivity extends Activity
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
                 JSONObject jsonSensorData = pullThreads[i].call();
                 jsonSensorData.put("label","running");
+                view.findViewById(R.id.Run).setBackgroundColor(Color.RED);
                 sendFunction("http://10.0.0.37:3000/",jsonSensorData);
             }
         }
@@ -111,6 +115,7 @@ public class MainActivity extends Activity
             //startSensing
             for (int i = 0; i < pullSensors.length; i++)
             {
+                view.findViewById(R.id.Run).setBackgroundColor(Color.GREEN);
                 pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
                 Log.d("debug",Integer.toString(pullSensors[i]));
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
