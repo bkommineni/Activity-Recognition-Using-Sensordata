@@ -25,7 +25,7 @@ import Utils.VolleyNetwork;
 public class MainActivity extends Activity
 {
 	private final static String LOG_TAG = "MainActivity";
-
+    private final String LINK_TO_SERVER = "http://10.1.74.175:9998/";
 	private AbstractDataLogger logger;
 	private ESSensorManager sensorManager;
     private boolean isSensing = false;
@@ -74,7 +74,7 @@ public class MainActivity extends Activity
                 JSONObject jsonSensorData = pullThreads[i].call();
                 jsonSensorData.put("label","walking");
                 view.findViewById(R.id.Walk).setBackgroundColor(Color.parseColor("#8b4513"));
-                sendFunction("http://10.1.74.175:9998/",jsonSensorData);
+                sendFunction(LINK_TO_SERVER,jsonSensorData);
             }
         }
         else
@@ -106,7 +106,7 @@ public class MainActivity extends Activity
                 JSONObject jsonSensorData = pullThreads[i].call();
                 jsonSensorData.put("label","running");
                 view.findViewById(R.id.Run).setBackgroundColor(Color.parseColor("#8b4513"));
-                sendFunction("http://10.1.74.175:9998/",jsonSensorData);
+                sendFunction(LINK_TO_SERVER,jsonSensorData);
             }
         }
         else
