@@ -13,10 +13,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/walk"
+        android:textColor="#ffffff"
         android:onClick="onWalkClick"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:background="#ff0000"
+        android:background="#8b4513"
         android:layout_marginTop="64dp" />
 
     <Button
@@ -24,10 +25,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/run"
+        android:textColor="#ffffff"
         android:onClick="onRunClick"
         android:layout_marginTop="133dp"
         android:layout_below="@+id/Walk"
         android:layout_alignParentEnd="true"
-        android:background="#ff0000"
+        android:background="#8b4513"
         android:layout_marginEnd="12dp" />
 </RelativeLayout>

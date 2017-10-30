@@ -11,3 +11,5 @@ libraries/SensorDataManager/.idea/
 libraries/SensorDataManager/.gradle/
 libraries/SensorDataManager/build/intermediates/
 libraries/SensorManager/build/intermediates/
+libraries/SensorManager/build/intermediates/
+DemoDataManager/build/intermediates/

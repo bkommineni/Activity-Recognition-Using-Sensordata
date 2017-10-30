@@ -15,6 +15,7 @@ import com.emotionsense.demo.data.loggers.MyDataLogger;
 import com.ubhave.datahandler.loggertypes.AbstractDataLogger;
 import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.config.SensorConfig;
+import com.ubhave.sensormanager.config.pull.PullSensorConfig;
 import com.ubhave.sensormanager.sensors.SensorUtils;
 
 import org.json.JSONObject;
@@ -47,10 +48,8 @@ public class MainActivity extends Activity
 			// TODO: change this line of code to change the type of data logger
             logger = MyDataLogger.getInstance();
             SensorConfig sensorConfig = new SensorConfig();
-            sensorConfig.setParameter("POST_SENSE_SLEEP_LENGTH_MILLIS", 120000L);
             sensorConfig.setParameter("MOTION_SAMPLING_DELAY", 1);
             sensorConfig.setParameter("LOW_PASS_ALPHA", 0.25F);
-            sensorConfig.setParameter("MOTION_THRESHOLD", 25);
             sensorManager = ESSensorManager.getSensorManagerWithCustomConfig(this,sensorConfig);
             pullThreads = new SenseOnceThread[pullSensors.length];
 		}
@@ -74,8 +73,8 @@ public class MainActivity extends Activity
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
                 JSONObject jsonSensorData = pullThreads[i].call();
                 jsonSensorData.put("label","walking");
-                view.findViewById(R.id.Walk).setBackgroundColor(Color.RED);
-                sendFunction("http://10.0.0.37:3000/",jsonSensorData);
+                view.findViewById(R.id.Walk).setBackgroundColor(Color.parseColor("#8b4513"));
+                sendFunction("http://10.1.74.175:9998/",jsonSensorData);
             }
         }
         else
@@ -106,8 +105,8 @@ public class MainActivity extends Activity
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
                 JSONObject jsonSensorData = pullThreads[i].call();
                 jsonSensorData.put("label","running");
-                view.findViewById(R.id.Run).setBackgroundColor(Color.RED);
-                sendFunction("http://10.0.0.37:3000/",jsonSensorData);
+                view.findViewById(R.id.Run).setBackgroundColor(Color.parseColor("#8b4513"));
+                sendFunction("http://10.1.74.175:9998/",jsonSensorData);
             }
         }
         else

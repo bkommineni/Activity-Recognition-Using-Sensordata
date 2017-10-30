@@ -4,13 +4,14 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var fs = require('fs');
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit:'50mb'}));
 
 Sensors = require('./models/sensors');
 var db = mongoose.connection.openUri('mongodb://localhost/sensordb');
 
 app.post('/',function(req,res){
     var sensor = req.body;
+    console.log('Request recevied');
     Sensors.addSensor(sensor,function(err,sensors){
             if(err){
                 throw err;
@@ -19,5 +20,5 @@ app.post('/',function(req,res){
    res.send('Got JSON from Client and Storing into Database...');
 });
 
-app.listen(3000);
-console.log('Running on port 3000...');
+app.listen(9998);
+console.log('Running on port 9998...');
