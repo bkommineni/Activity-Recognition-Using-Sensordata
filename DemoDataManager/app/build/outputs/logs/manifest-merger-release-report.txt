@@ -1,0 +1,196 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/gforgam/.android/build-cache/39a81993eaa85126b0f3f3bf5ce1f3a69e08650b/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/gforgam/.android/build-cache/4f63138f7e92b05780442c3a5c6fffbecc902a2b/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/gforgam/.android/build-cache/d22d6ded61850a1ac3896ad290369da6e134b9ce/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/gforgam/.android/build-cache/435d7340200e45a00950c8b36582083ca43fcbd5/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/gforgam/.android/build-cache/e79c2c7cb6c7bdcb49f3d33be490fa8ff2083770/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/gforgam/.android/build-cache/7dc9f4d0472cdab41c9a407ef3bc9b58b330f146/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/gforgam/.android/build-cache/258137c6b582066383362e211721f8d39a88bbf5/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/gforgam/.android/build-cache/954bd701ab5a38daa8e4037b01eac0a5a7a94995/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.volley:volley:1.0.0] /Users/gforgam/.android/build-cache/da2bea8a4cdb7b5acb350b1cf5bd7ecbe0e94905/output/AndroidManifest.xml:7:5-43
+MERGED from [DemoDataManager:SensorDataManager-debug:unspecified] /Users/gforgam/.android/build-cache/2f90a9e4eae92e5b8225ef8233a537e9470fd929/output/AndroidManifest.xml:7:5-9:41
+MERGED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:28:5-30:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:15:5-67
+MERGED from [DemoDataManager:SensorDataManager-debug:unspecified] /Users/gforgam/.android/build-cache/2f90a9e4eae92e5b8225ef8233a537e9470fd929/output/AndroidManifest.xml:15:5-67
+MERGED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:40:5-67
+	android:name
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:15:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:18:5-79
+MERGED from [DemoDataManager:SensorDataManager-debug:unspecified] /Users/gforgam/.android/build-cache/2f90a9e4eae92e5b8225ef8233a537e9470fd929/output/AndroidManifest.xml:18:5-79
+MERGED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:34:5-79
+	android:name
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:18:22-76
+application
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:20:5-35:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/gforgam/.android/build-cache/39a81993eaa85126b0f3f3bf5ce1f3a69e08650b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/gforgam/.android/build-cache/4f63138f7e92b05780442c3a5c6fffbecc902a2b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/gforgam/.android/build-cache/d22d6ded61850a1ac3896ad290369da6e134b9ce/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/gforgam/.android/build-cache/435d7340200e45a00950c8b36582083ca43fcbd5/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/gforgam/.android/build-cache/e79c2c7cb6c7bdcb49f3d33be490fa8ff2083770/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/gforgam/.android/build-cache/7dc9f4d0472cdab41c9a407ef3bc9b58b330f146/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/gforgam/.android/build-cache/258137c6b582066383362e211721f8d39a88bbf5/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/gforgam/.android/build-cache/954bd701ab5a38daa8e4037b01eac0a5a7a94995/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.volley:volley:1.0.0] /Users/gforgam/.android/build-cache/da2bea8a4cdb7b5acb350b1cf5bd7ecbe0e94905/output/AndroidManifest.xml:9:5-20
+MERGED from [DemoDataManager:SensorDataManager-debug:unspecified] /Users/gforgam/.android/build-cache/2f90a9e4eae92e5b8225ef8233a537e9470fd929/output/AndroidManifest.xml:20:5-47
+MERGED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:62:5-20
+	android:label
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:24:9-41
+	android:allowBackup
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:22:9-35
+	android:icon
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:23:9-45
+	android:theme
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:25:9-40
+	android:name
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:21:9-66
+activity#com.emotionsense.demo.data.MainActivity
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:26:9-34:20
+	android:label
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:28:13-45
+	android:name
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:27:13-67
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:32:27-74
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/gforgam/.android/build-cache/39a81993eaa85126b0f3f3bf5ce1f3a69e08650b/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/gforgam/.android/build-cache/4f63138f7e92b05780442c3a5c6fffbecc902a2b/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/gforgam/.android/build-cache/d22d6ded61850a1ac3896ad290369da6e134b9ce/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/gforgam/.android/build-cache/435d7340200e45a00950c8b36582083ca43fcbd5/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/gforgam/.android/build-cache/e79c2c7cb6c7bdcb49f3d33be490fa8ff2083770/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/gforgam/.android/build-cache/7dc9f4d0472cdab41c9a407ef3bc9b58b330f146/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/gforgam/.android/build-cache/258137c6b582066383362e211721f8d39a88bbf5/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/gforgam/.android/build-cache/954bd701ab5a38daa8e4037b01eac0a5a7a94995/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/gforgam/.android/build-cache/5ac1b14fe3a8eec58960f8766635b0f2b629c8d0/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [DemoDataManager:SensorDataManager-debug:unspecified] /Users/gforgam/.android/build-cache/2f90a9e4eae92e5b8225ef8233a537e9470fd929/output/AndroidManifest.xml:12:5-81
+MERGED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:50:5-81
+	android:name
+		ADDED from [DemoDataManager:SensorDataManager-debug:unspecified] /Users/gforgam/.android/build-cache/2f90a9e4eae92e5b8225ef8233a537e9470fd929/output/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/gforgam/git/activity_analyzer/DemoDataManager/app/src/main/AndroidManifest.xml:2:1-37:12 reason: com.ubhave.sensordatamanager requested WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:32:5-81
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:32:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:33:5-79
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:33:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:35:5-76
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:35:22-73
+uses-permission#android.permission.BATTERY_STATS
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:36:5-72
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:36:22-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:37:5-68
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:37:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:38:5-74
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:38:22-71
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:39:5-76
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:39:22-73
+uses-permission#android.permission.PROCESS_OUTGOING_CALLS
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:41:5-81
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:41:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:42:5-75
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:42:22-72
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:43:5-81
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:43:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:44:5-71
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:44:22-68
+uses-permission#android.permission.UPDATE_DEVICE_STATS
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:45:5-78
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:45:22-75
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:46:5-70
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:46:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:47:5-67
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:47:22-64
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:48:5-72
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:48:22-69
+uses-permission#android.permission.GET_TASKS
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:49:5-68
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:49:22-65
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:52:5-54:36
+	android:required
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:54:9-33
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:53:9-61
+uses-feature#android.hardware.sensor.gyroscope
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:55:5-57:36
+	android:required
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:57:9-33
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:56:9-57
+uses-feature#android.hardware.camera
+ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:58:5-60:36
+	android:required
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:60:9-33
+	android:name
+		ADDED from [DemoDataManager:SensorManager-debug:unspecified] /Users/gforgam/.android/build-cache/775f76be1dc67776fbe35d8630665c65da658f6a/output/AndroidManifest.xml:59:9-47

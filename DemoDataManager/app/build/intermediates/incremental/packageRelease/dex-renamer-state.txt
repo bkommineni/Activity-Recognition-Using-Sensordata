@@ -1,0 +1,4 @@
+#Mon Oct 30 15:25:40 PDT 2017
+base.0=/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/gforgam/git/activity_analyzer/DemoDataManager/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex
