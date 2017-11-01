@@ -1,3 +1,1 @@
 # activity_analyzer
-
-# test
