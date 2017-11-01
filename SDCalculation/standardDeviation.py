@@ -1,5 +1,6 @@
 import json,statistics,math
 import numpy as np
+from collections import defaultdict
 
 class Stddev(object):
 
@@ -24,7 +25,30 @@ class Stddev(object):
         binKey = []
         for i in np.arange(min(self.lst),max(self.lst),rangeVal/10):
             binKey.append(i)
-        return binKey
+        bins = defaultdict(list)
+        for j in self.lst:
+            if j >= binKey[0] and j<binKey[1]:
+                bins[binKey[0]].append(j)
+            elif j>= binKey[1] and j<binKey[2]:
+                bins[binKey[1]].append(j)
+            elif j>= binKey[2] and j<binKey[3]:
+                bins[binKey[2]].append(j)
+            elif j>= binKey[3] and j<binKey[4]:
+                bins[binKey[3]].append(j)
+            elif j>= binKey[4] and j<binKey[5]:
+                bins[binKey[4]].append(j)
+            elif j >= binKey[5] and j < binKey[6]:
+                bins[binKey[5]].append(j)
+            elif j >= binKey[6] and j < binKey[7]:
+                bins[binKey[6]].append(j)
+            elif j >= binKey[7] and j < binKey[8]:
+                bins[binKey[7]].append(j)
+            elif j >= binKey[8] and j < binKey[9]:
+                bins[binKey[8]].append(j)
+            else:
+                bins[binKey[9]].append(j)
+
+        return bins.items()
 
 
 
@@ -44,6 +68,10 @@ if __name__ == '__main__':
     print  "\nStandard Deviation of zAxis is " + str(round(zAxis.calStd(),2))
     print  "Standard Deviation of yAxis is " + str(yAxis.calStd())
     print  "Standard Deviation of zAxis is " + str(xAxis.calStd())
+
+    # print  "\nMedian of zAxis is " + str(zAxis.calMedian())
+    # print  "Median of yAxis is " + str(yAxis.calMedian())
+    # print  "Median of xAxis is " + str(xAxis.calMedian())
 
     print  "\nMean of zAxis is " + str(zAxis.calMean())
     print  "Mean of yAxis is " + str(yAxis.calMean())
