@@ -9,9 +9,6 @@ class Stddev(object):
     def calMean(self): #Average
         return statistics.mean(self.lst)
 
-    # def calMedian(self): #Median
-    #      return statistics.median(self.lst)
-
     def calStd(self): #Standard Deviation
         return statistics.stdev(self.lst)
 
@@ -27,8 +24,6 @@ class Stddev(object):
         binKey = []
         for i in np.arange(min(self.lst),max(self.lst),rangeVal/10):
             binKey.append(i)
-
-        #bins = dict.fromkeys(binKey)
         return binKey
 
 
@@ -49,10 +44,6 @@ if __name__ == '__main__':
     print  "\nStandard Deviation of zAxis is " + str(round(zAxis.calStd(),2))
     print  "Standard Deviation of yAxis is " + str(yAxis.calStd())
     print  "Standard Deviation of zAxis is " + str(xAxis.calStd())
-
-    # print  "\nMedian of zAxis is " + str(zAxis.calMedian())
-    # print  "Median of yAxis is " + str(yAxis.calMedian())
-    # print  "Median of xAxis is " + str(xAxis.calMedian())
 
     print  "\nMean of zAxis is " + str(zAxis.calMean())
     print  "Mean of yAxis is " + str(yAxis.calMean())
