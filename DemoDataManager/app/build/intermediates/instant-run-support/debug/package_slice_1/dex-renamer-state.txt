@@ -1,4 +1,0 @@
-#Tue Oct 03 22:14:32 PDT 2017
-base.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
-renamed.0=classes.dex
-file.0=H\:\\activity_analyzer\\DemoDataManager\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1\\classes.dex

@@ -1,1 +1,1 @@
-include ':app', ':SensorDataManager-debug', ':SensorManager-debug'
+include ':app', ':SensorManager-debug', ':SensorDataManager-debug'
