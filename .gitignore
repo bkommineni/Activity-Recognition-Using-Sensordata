@@ -14,3 +14,4 @@ libraries/SensorManager/build/intermediates/
 libraries/SensorManager/build/intermediates/
 DemoDataManager/build/intermediates/
 Feature-Generation/.idea/
+*.pyc
