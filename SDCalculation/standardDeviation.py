@@ -20,35 +20,47 @@ class Stddev(object):
 
         return result/self.lst
 
+    @property
     def calBinnedDist(self): #Binned Distribution
         rangeVal = max(self.lst)-min(self.lst)
         binKey = []
         for i in np.arange(min(self.lst),max(self.lst),rangeVal/10):
             binKey.append(i)
         bins = defaultdict(list)
+        count_bins = defaultdict(int)
         for j in self.lst:
             if j >= binKey[0] and j<binKey[1]:
                 bins[binKey[0]].append(j)
+                count_bins[binKey[0]] +=1
             elif j>= binKey[1] and j<binKey[2]:
                 bins[binKey[1]].append(j)
+                count_bins[binKey[1]] += 1
             elif j>= binKey[2] and j<binKey[3]:
                 bins[binKey[2]].append(j)
+                count_bins[binKey[2]] += 1
             elif j>= binKey[3] and j<binKey[4]:
                 bins[binKey[3]].append(j)
+                count_bins[binKey[3]] += 1
             elif j>= binKey[4] and j<binKey[5]:
                 bins[binKey[4]].append(j)
+                count_bins[binKey[4]] += 1
             elif j >= binKey[5] and j < binKey[6]:
                 bins[binKey[5]].append(j)
+                count_bins[binKey[5]] += 1
             elif j >= binKey[6] and j < binKey[7]:
                 bins[binKey[6]].append(j)
+                count_bins[binKey[6]] += 1
             elif j >= binKey[7] and j < binKey[8]:
                 bins[binKey[7]].append(j)
+                count_bins[binKey[7]] += 1
             elif j >= binKey[8] and j < binKey[9]:
                 bins[binKey[8]].append(j)
+                count_bins[binKey[8]] += 1
             else:
                 bins[binKey[9]].append(j)
+                count_bins[binKey[9]] += 1
 
-        return bins.items()
+        return count_bins.items()
 
 
 
@@ -69,19 +81,15 @@ if __name__ == '__main__':
     print  "Standard Deviation of yAxis is " + str(yAxis.calStd())
     print  "Standard Deviation of zAxis is " + str(xAxis.calStd())
 
-    # print  "\nMedian of zAxis is " + str(zAxis.calMedian())
-    # print  "Median of yAxis is " + str(yAxis.calMedian())
-    # print  "Median of xAxis is " + str(xAxis.calMedian())
-
     print  "\nMean of zAxis is " + str(zAxis.calMean())
     print  "Mean of yAxis is " + str(yAxis.calMean())
     print  "Mean of xAxis is " + str(xAxis.calMean())
 
     print "\nAverage Resultant Acceleration is " + str(allAxis.calAvgRstAccln(xAxis_data,yAxis_data,zAxis_data))
 
-    print "\nBinned Distribution of zAxis is " + str(Stddev(zAxis_data).calBinnedDist());
-    print "Binned Distribution of yAxis is " + str(Stddev(yAxis_data).calBinnedDist());
-    print "Binned Distribution of xAxis is " + str(Stddev(xAxis_data).calBinnedDist());
+    print "\nBinned Distribution of zAxis is " + str(Stddev(zAxis_data).calBinnedDist);
+    print "Binned Distribution of yAxis is " + str(Stddev(yAxis_data).calBinnedDist);
+    print "Binned Distribution of xAxis is " + str(Stddev(xAxis_data).calBinnedDist);
 
 
 
