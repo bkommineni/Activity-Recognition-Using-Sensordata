@@ -25,7 +25,7 @@ class Stddev(object):
     def calBinnedDist(self): #Binned Distribution
         rangeVal = max(self.lst)-min(self.lst)
         binKey = []
-        for i in np.arange(rangeVal/10,rangeVal+(rangeVal/10),rangeVal/10):
+        for i in np.arange(min(self.lst),max(self.lst),rangeVal/10):
             binKey.append(i)
 
         #bins = dict.fromkeys(binKey)
