@@ -1,0 +1,17 @@
+*.bin
+*.class
+*.iml
+DemoDataManager/build/
+DemoDataManager/app/build/
+DemoDataManager/.gradle/
+DemoDataManager/.idea/
+libraries/SensorManager/.idea/
+libraries/SensorManager/.gradle/
+libraries/SensorDataManager/.idea/
+libraries/SensorDataManager/.gradle/
+libraries/SensorDataManager/build/intermediates/
+libraries/SensorManager/build/intermediates/
+libraries/SensorManager/build/intermediates/
+DemoDataManager/build/intermediates/
+Feature-Generation/.idea/
+*.pyc

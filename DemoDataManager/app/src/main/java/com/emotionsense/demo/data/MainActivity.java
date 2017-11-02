@@ -1,11 +1,7 @@
 package com.emotionsense.demo.data;
 
-import java.net.HttpURLConnection;
-import java.net.Socket;
-import java.net.URL;
-import java.util.List;
-
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,80 +10,48 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.emotionsense.demo.data.loggers.AsyncEncryptedFiles;
-import com.emotionsense.demo.data.loggers.AsyncWiFiOnlyEncryptedDatabase;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.emotionsense.demo.data.loggers.MyDataLogger;
-import com.ubhave.datahandler.ESDataManager;
-import com.ubhave.datahandler.except.DataHandlerException;
 import com.ubhave.datahandler.loggertypes.AbstractDataLogger;
-import com.ubhave.datahandler.transfer.DataUploadCallback;
 import com.ubhave.sensormanager.ESSensorManager;
-import com.ubhave.sensormanager.data.SensorData;
+import com.ubhave.sensormanager.config.SensorConfig;
+import com.ubhave.sensormanager.config.pull.PullSensorConfig;
 import com.ubhave.sensormanager.sensors.SensorUtils;
+
+import org.json.JSONObject;
 
 import Utils.VolleyNetwork;
 
-public class MainActivity extends Activity implements DataUploadCallback
+public class MainActivity extends Activity
 {
 	private final static String LOG_TAG = "MainActivity";
-
+    private final String LINK_TO_SERVER = "http://10.1.74.175:9998/";
 	private AbstractDataLogger logger;
 	private ESSensorManager sensorManager;
-	
-	private SubscribeThread[] subscribeThreads;
+    private boolean isSensing = false;
 	private SenseOnceThread[] pullThreads;
-	private HttpURLConnection conn = null;
-
-	//Client client = new Client("http://localhost:9999/data",9999);
 
 	// TODO: add push sensors you want to sense from here
-	private final int[] pushSensors = {SensorUtils.SENSOR_TYPE_PROXIMITY,
-			SensorUtils.SENSOR_TYPE_BATTERY,SensorUtils.SENSOR_TYPE_PHONE_STATE
-	};
+	private final int[] pushSensors = {};
 	
 	 // TODO: add pull sensors you want to sense once from here
-	private final int[] pullSensors = {SensorUtils.SENSOR_TYPE_ACCELEROMETER,
-			 SensorUtils.SENSOR_TYPE_GYROSCOPE,
-	         SensorUtils.SENSOR_TYPE_LOCATION,
-	         SensorUtils.SENSOR_TYPE_MAGNETIC_FIELD,
-			 SensorUtils.SENSOR_TYPE_STEP_COUNTER};
+	private final int[] pullSensors = {SensorUtils.SENSOR_TYPE_ACCELEROMETER};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		//client.connect();
 
 		try
 		{
-//			URL url = new URL("http://localhost:9999/data");
-//			conn = (HttpURLConnection) url.openConnection();
-//			// TODO: change this line of code to change the type of data logger
-//			// Note: you shouldn't have more than one logger!
-////			logger = AsyncEncryptedDatabase.getInstance();
-////			logger = AsyncWiFiOnlyEncryptedDatabase.getInstance();
-////			logger = AsyncEncryptedFiles.getInstance();
-////			logger = AsyncUnencryptedDatabase.getInstance();
-////			logger = AsyncUnencryptedFiles.getInstance();
-////			logger = StoreOnlyEncryptedDatabase.getInstance();
-////			logger = StoreOnlyEncryptedFiles.getInstance();
-////			logger = StoreOnlyUnencryptedDatabase.getInstance();
-////			logger = StoreOnlyUnencryptedFiles.getInstance();
-			logger = MyDataLogger.getInstance();
-			sensorManager = ESSensorManager.getSensorManager(this);
-//
-//			// Example of starting some sensing in onCreate()
-//			// Collect a single sample from the listed pull sensors
-			pullThreads = new SenseOnceThread[pullSensors.length];
-			for (int i = 0; i < pullSensors.length; i++)
-			{
-				pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i],conn);
-				Log.d("debug",Integer.toString(pullSensors[i]));
-				System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
-				pullThreads[i].start();
-			}
+			// TODO: change this line of code to change the type of data logger
+            logger = MyDataLogger.getInstance();
+            SensorConfig sensorConfig = new SensorConfig();
+            sensorConfig.setParameter("MOTION_SAMPLING_DELAY", 1);
+            sensorConfig.setParameter("LOW_PASS_ALPHA", 0.25F);
+            sensorManager = ESSensorManager.getSensorManagerWithCustomConfig(this,sensorConfig);
+            pullThreads = new SenseOnceThread[pullSensors.length];
 		}
 		catch (Exception e)
 		{
@@ -95,137 +59,99 @@ public class MainActivity extends Activity implements DataUploadCallback
 			Log.d(LOG_TAG, e.getLocalizedMessage());
 			e.printStackTrace();
 		}
-		// VolleyNetwork instance to connect to the server.
-		sendFunction("http://10.1.50.224:3000/");
 	}
 
-	private void sendFunction(String url)
+	public void onWalkClick(final View view) throws Exception
     {
-		StringRequest stringRequest = getStringRequest(url);
-		VolleyNetwork.getInstance(getApplicationContext()).addToRequestQueue(stringRequest);
-	}
+        if (isSensing)
+        {
+            //stopSensing
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                JSONObject jsonSensorData = pullThreads[i].call();
+                jsonSensorData.put("label","walking");
+                view.findViewById(R.id.Walk).setBackgroundColor(Color.parseColor("#8b4513"));
+                sendFunction(LINK_TO_SERVER,jsonSensorData);
+            }
+        }
+        else
+        {
+            //startSensing
+            Log.d("debug","starting sensing");
+            view.findViewById(R.id.Walk).setBackgroundColor(Color.GREEN);
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                pullThreads[i].startSensing();
+            }
+        }
+        isSensing = !isSensing;
+    }
 
-	// Change to JSONObjectRequest to send the JSON Request with the data that we have
-	private StringRequest getStringRequest(String url)
+    public void onRunClick(final View view) throws Exception
     {
-		return new StringRequest(Request.Method.POST, url,
-				new Response.Listener<String>() {
-					@Override
-					public void onResponse(String response) {
-						Toast.makeText(getApplicationContext(), response, Toast.LENGTH_LONG).show();
-					}
-				}, new Response.ErrorListener() {
-			@Override
-			public void onErrorResponse(VolleyError error) {
-				Toast.makeText(getApplicationContext(),"Connection Error: Cannot reach the server!", Toast.LENGTH_LONG).show();
-			}
-		});
-	}
+        if (isSensing)
+        {
+            //stopSensing
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                JSONObject jsonSensorData = pullThreads[i].call();
+                jsonSensorData.put("label","running");
+                view.findViewById(R.id.Run).setBackgroundColor(Color.parseColor("#8b4513"));
+                sendFunction(LINK_TO_SERVER,jsonSensorData);
+            }
+        }
+        else
+        {
+            //startSensing
+            for (int i = 0; i < pullSensors.length; i++)
+            {
+                view.findViewById(R.id.Run).setBackgroundColor(Color.GREEN);
+                pullThreads[i] = new SenseOnceThread(this, sensorManager, logger, pullSensors[i]);
+                Log.d("debug",Integer.toString(pullSensors[i]));
+                System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
+                pullThreads[i].startSensing();
+            }
+        }
+        isSensing = !isSensing;
+    }
 
-	@Override
-	public void onResume()
-	{
-		super.onResume();
-		
-		// Example of starting some sensing in onResume()
-		// Collect a single sample from the listed push sensors
-		subscribeThreads = new SubscribeThread[pushSensors.length];
-		for (int i = 0; i < pushSensors.length; i++)
-		{
-			subscribeThreads[i] = new SubscribeThread(this, sensorManager, logger, pushSensors[i]);
-			subscribeThreads[i].start();
-		}
-	}
+    private void sendFunction(String url, JSONObject data)
+    {
+        JsonObjectRequest jsonObjectRequest = getJsonObjectRequest(url, data);
+        VolleyNetwork.getInstance(this.getApplicationContext()).addToRequestQueue(jsonObjectRequest);
+        Log.d("debug", "In the send Function");
+    }
 
-	@Override
-	public void onPause()
-	{
-		super.onPause();
-		
-		// Don't forget to stop sensing when the app pauses
-		for (SubscribeThread thread : subscribeThreads)
-		{
-			thread.stopSensing();
-		}
-	}
+    // Change to JSONObjectRequest to send the JSON Request with the data that we have
+    private JsonObjectRequest getJsonObjectRequest(String url, JSONObject data)
+    {
+        return new JsonObjectRequest
+                (Request.Method.POST, url, data, new Response.Listener<JSONObject>() {
 
-	public void onSearchClicked(final View view)
-	{
-		// Counts the number of sensor events from the last 60 seconds
-		try
-		{
-			long startTime = System.currentTimeMillis() - (1000L * 60);
-			ESDataManager dataManager = logger.getDataManager();
-			
-			for (int pushSensor : pushSensors)
-			{
-				List<SensorData> recentData = dataManager.getRecentSensorData(pushSensor, startTime);
-				Toast.makeText(this, "Recent "+SensorUtils.getSensorName(pushSensor)+": " + recentData.size(), Toast.LENGTH_LONG).show();
-			}
-			
-			for (int pushSensor : pullSensors)
-			{
-				List<SensorData> recentData = dataManager.getRecentSensorData(pushSensor, startTime);
-				Toast.makeText(this, "Recent "+SensorUtils.getSensorName(pushSensor)+": " + recentData.size(), Toast.LENGTH_LONG).show();
-			}
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_SHORT).show();
+                    }
+                }, new Response.ErrorListener() {
 
-		}
-		catch (Exception e)
-		{
-			Toast.makeText(this, "Error retrieving sensor data", Toast.LENGTH_LONG).show();
-			Log.d(LOG_TAG, e.getLocalizedMessage());
-			e.printStackTrace();
-		}
-	}
-
-	public void onFlushClicked(final View view)
-	{
-		// Tries to POST all of the stored sensor data to the server
-		try
-		{
-			ESDataManager dataManager = logger.getDataManager();
-			dataManager.postAllStoredData(this);
-		}
-		catch (DataHandlerException e)
-		{
-			Toast.makeText(this, "Exception: "+e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
-			Log.d(LOG_TAG, ""+e.getLocalizedMessage());
-		}
-	}
-
-	@Override
-	public void onDataUploaded()
-	{
-		runOnUiThread(new Runnable()
-		{
-
-			@Override
-			public void run()
-			{
-				// Callback method: the data has been successfully posted
-				Toast.makeText(MainActivity.this, "Data transferred.", Toast.LENGTH_LONG).show();
-			}
-		});
-	}
-	
-	@Override
-	public void onDataUploadFailed()
-	{
-		runOnUiThread(new Runnable()
-		{
-
-			@Override
-			public void run()
-			{
-				// Callback method: the data has not been successfully posted
-				Toast.makeText(MainActivity.this, "Error transferring data", Toast.LENGTH_LONG).show();
-			}
-		});
-	}
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO Auto-generated method stub
+                    }
+                });
+    }
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		//client.disconnect();
 	}
 }
