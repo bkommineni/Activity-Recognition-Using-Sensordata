@@ -9,6 +9,8 @@ import numpy as np
 from CalPeaks import cal_peaks
 from GetTimeStampsPeaks import get_timestamps_peaks
 
+ED = 10000
+
 
 def generate_binned_distribution(data):
     x_axis_data = data['xAxis']
@@ -72,6 +74,7 @@ def generate_call_peaks(data):
 
     return list
 
+
 def generate_absolute_acc_diff(data):
     x_axis_data = data['xAxis']
     y_axis_data = data['yAxis']
@@ -127,12 +130,15 @@ def calStd(self):  # Standard Deviation
     return statistics.stdev(self)
 
 
-def calAvgRstAccln(self, x, y, z):  # Average Resultant Acceleration
+def generate_res_acc(data):  # Average Resultant Acceleration
     result = 0
-    for xi, yi, zi in zip(x, y, z):
+    x_axis_data = data['xAxis']
+    y_axis_data = data['yAxis']
+    z_axis_data = data['zAxis']
+    for xi, yi, zi in zip(x_axis_data, y_axis_data, z_axis_data):
         result += np.math.sqrt((xi ** 2) + (yi ** 2) + (zi ** 2))
 
-    return result / self.lst
+    return result / ED
 
 
 if __name__ == '__main__':
@@ -140,7 +146,7 @@ if __name__ == '__main__':
     with open("featuresfile.csv", "a") as cf:
         csvwriter = csv.writer(cf)
         csvwriter.writerow(["BinnedDistribution", "PeaksList", "Average Absolute Difference", "Average Acceleration"
-                            , "Standard Deviation"])
+                            , "Standard Deviation", "Average Resultant Acceleration"])
 
     file_path = "data.json"
     with open(file_path) as f:
@@ -151,6 +157,7 @@ if __name__ == '__main__':
             aalist = generate_absolute_acc_diff(j_content)
             avgacclist = generate_average_accleration(j_content)
             stddevlist = generate_std_dev(j_content)
+            aracclist = generate_res_acc(j_content)
             with open("featuresfile.csv", "a") as cf:
                 csvwriter = csv.writer(cf)
-                csvwriter.writerow([bin_dis, list_of_peaks, aalist, avgacclist, stddevlist])
+                csvwriter.writerow([bin_dis, list_of_peaks, aalist, avgacclist, stddevlist, aracclist])
