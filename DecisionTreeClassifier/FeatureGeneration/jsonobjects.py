@@ -6,6 +6,8 @@ import statistics
 from pathlib import Path
 
 import numpy as np
+import sys
+
 from FeatureGeneration.CalPeaks import cal_peaks
 from FeatureGeneration.GetTimeStampsPeaks import get_timestamps_peaks
 
@@ -142,22 +144,25 @@ def generate_res_acc(data):  # Average Resultant Acceleration
 
 
 if __name__ == '__main__':
-    my_file = Path("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv")
+    featureFileName = sys.argv[1]
+    dataFile = sys.argv[2]
+
+    my_file = Path(featureFileName)
     if my_file.exists() :
-        os.remove("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv")
+        os.remove(featureFileName)
 
-    with open("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv", "a") as cf:
+    with open(featureFileName, "a") as cf:
         csvwriter = csv.writer(cf)
-        csvwriter.writerow(["User","Bin1,x","Bin2,x","Bin3,x","Bin4,x","Bin5,x","Bin6,x","Bin7,x","Bin8,x","Bin9,x","Bin10,x",
-                            "Bin1,y","Bin2,y","Bin3,y","Bin4,y","Bin5,y","Bin6,y","Bin7,y","Bin8,y","Bin9,y","Bin10,y",
+        csvwriter.writerow(["User", "Bin1,x", "Bin2,x", "Bin3,x", "Bin4,x", "Bin5,x", "Bin6,x", "Bin7,x", "Bin8,x", "Bin9,x", "Bin10,x",
+                            "Bin1,y", "Bin2,y", "Bin3,y", "Bin4,y", "Bin5,y", "Bin6,y", "Bin7,y", "Bin8,y", "Bin9,y", "Bin10,y",
                             "Bin1,z","Bin2,z","Bin3,z","Bin4,z","Bin5,z","Bin6,z","Bin7,z","Bin8,z","Bin9,z","Bin10,z",
-                            "PeaksList-x","PeaksList-y","PeaksList-z",
-                            "AvgAbsDiff-x","AvgAbsDiff-y","AvgAbsDiff-z",
-                            "AvgAcc-x","AvgAcc-y","AvgAcc-z",
-                            "StdDev-x","StdDev-y","StdDev-z",
-                            "AvgResAcc","Label"])
+                            "PeaksList-x", "PeaksList-y", "PeaksList-z",
+                            "AvgAbsDiff-x", "AvgAbsDiff-y", "AvgAbsDiff-z",
+                            "AvgAcc-x", "AvgAcc-y", "AvgAcc-z",
+                            "StdDev-x", "StdDev-y", "StdDev-z",
+                            "AvgResAcc", "Label"])
 
-    file_path = "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/Data/data.json"
+    file_path = dataFile
     with open(file_path) as f:
         for line in f:
             bhargavi_device = 'd4e6b172e6e4600b'
