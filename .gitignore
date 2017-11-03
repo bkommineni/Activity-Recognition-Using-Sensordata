@@ -17,3 +17,4 @@ Feature-Generation/.idea/
 CombinedFeatures/.idea/
 *.pyc
 DemoDataManager/DemoDataManager.iml
+DecisionTreeClassifier/.idea/
