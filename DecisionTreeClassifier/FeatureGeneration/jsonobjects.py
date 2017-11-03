@@ -15,6 +15,11 @@ ED = 10000
 
 
 def generate_binned_distribution(data):
+    '''
+    method to generate binned distribution
+    :param data:
+    :return:
+    '''
     x_axis_data = data['xAxis']
     y_axis_data = data['yAxis']
     z_axis_data = data['zAxis']
