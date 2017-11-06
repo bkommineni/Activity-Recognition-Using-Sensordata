@@ -151,7 +151,7 @@ if __name__ == '__main__':
         csvwriter.writerow(["User","Bin1,x","Bin2,x","Bin3,x","Bin4,x","Bin5,x","Bin6,x","Bin7,x","Bin8,x","Bin9,x","Bin10,x",
                             "Bin1,y","Bin2,y","Bin3,y","Bin4,y","Bin5,y","Bin6,y","Bin7,y","Bin8,y","Bin9,y","Bin10,y",
                             "Bin1,z","Bin2,z","Bin3,z","Bin4,z","Bin5,z","Bin6,z","Bin7,z","Bin8,z","Bin9,z","Bin10,z",
-                            "PeaksList-x","PeaksList-y","PeaksList-z",
+                            "TimeDiffPeaks-x","TimeDiffPeaks-y","TimeDiffPeaks-z",
                             "AvgAbsDiff-x","AvgAbsDiff-y","AvgAbsDiff-z",
                             "AvgAcc-x","AvgAcc-y","AvgAcc-z",
                             "StdDev-x","StdDev-y","StdDev-z",

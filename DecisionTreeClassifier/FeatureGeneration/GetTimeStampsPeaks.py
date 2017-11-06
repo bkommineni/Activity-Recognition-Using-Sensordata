@@ -1,5 +1,3 @@
-
-
 def get_timestamps_peaks(list_of_peaks):
     timestamps = []
     for i in range(0,len(list_of_peaks)):
