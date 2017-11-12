@@ -157,7 +157,7 @@ if __name__ == '__main__':
                             "StdDev-x","StdDev-y","StdDev-z",
                             "AvgResAcc","Label"])
 
-    file_path = "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/Data/data2.json"
+    file_path = "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/Data/BAS.json"
     with open(file_path) as f:
         for line in f:
             bhargavi_device = 'd4e6b172e6e4600b'
