@@ -157,11 +157,12 @@ if __name__ == '__main__':
                             "StdDev-x","StdDev-y","StdDev-z",
                             "AvgResAcc","Label"])
 
-    file_path = "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/Data/data.json"
+    file_path = "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/Data/data2.json"
     with open(file_path) as f:
         for line in f:
             bhargavi_device = 'd4e6b172e6e4600b'
             surada_device = '3093faee1cbda203'
+            anjani_device = '8bfa3ca49705cd76'
             j_content = json.loads(line)
             device_id = j_content['deviceid']
             label = j_content['label']
@@ -178,6 +179,8 @@ if __name__ == '__main__':
                 username = 'Bhargavi'
             if device_id == surada_device:
                 username = 'Surada'
+            if device_id == anjani_device:
+                username = 'Anjani'
 
             with open(my_file, "a") as cf:
                 csvwriter = csv.writer(cf)

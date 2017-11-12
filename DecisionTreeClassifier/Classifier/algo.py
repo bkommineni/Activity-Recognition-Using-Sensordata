@@ -18,15 +18,19 @@ df_gini.fit(X_train, Y_train)
 
 arr = df_gini.feature_importances_
 
+print(arr)
+
 tree.export_graphviz(df_gini,feature_names=df.columns.values[1:44],out_file='tree_gini.dot')
 
 #Predicting using test data
 Y_predict_gini = df_gini.predict(X_test)
 
-print(Y_predict_gini)
+#print(Y_predict_gini)
 
 #Calculating accuracy score
 score = accuracy_score(Y_test,Y_predict_gini)
+
+print(score)
 
 #Using entropy(information gain)
 df_entropy = DecisionTreeClassifier(criterion='entropy')
