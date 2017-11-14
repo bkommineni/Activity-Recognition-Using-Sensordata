@@ -18,3 +18,5 @@ CombinedFeatures/.idea/
 *.pyc
 DemoDataManager/DemoDataManager.iml
 DecisionTreeClassifier/.idea/
+LogisticRegression/.idea/
+LogisticRegression/Data/
