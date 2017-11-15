@@ -198,4 +198,4 @@ if __name__ == '__main__':
                                     aalist[0], aalist[1], aalist[2],
                                     avgacclist[0], avgacclist[1], avgacclist[2],
                                     stddevlist[0], stddevlist[1],stddevlist[2],
-                                    avg_res_acc,label])
+                                    avg_res_acc, label])
