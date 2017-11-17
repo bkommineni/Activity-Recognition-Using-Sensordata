@@ -33,6 +33,16 @@ switch (myArgs[0]) {
                 });
 
            break;
+	  case 'export':
+                db.collection("sensors").find({}).toArray(function(err, result) {
+                if (err) throw err;
+                        fs.writeFile ("data.json", JSON.stringify(result), function(err) {
+                        if (err) throw err;
+                                console.log('complete');
+                                db.close();
+                        });
+                });
+                break;
         default:
             console.log('BYE!');
         break;
