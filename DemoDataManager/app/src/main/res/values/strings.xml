@@ -4,5 +4,7 @@
     <string name="app_name">Data Manager Demo</string>
     <string name="walk">walk</string>
     <string name="run">run</string>
+    <string name="enter_your_usf_username">Enter your USF Username</string>
+    <string name="let_s_start_walking_running">Let\'s start walking/running!</string>
 
 </resources>
