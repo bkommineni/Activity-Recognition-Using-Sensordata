@@ -14,7 +14,7 @@ ppn = Perceptron(max_iter=40, eta0=0.1, random_state=1)
 ppn.fit(X_train, y_train)
 y_pred = ppn.predict(X_test)
 
-print 'X train size =' , len(X_train)
+print 'X train size =', len(X_train)
 print 'Y train size =' , len(y_train)
 
 kfold = StratifiedKFold(n_splits=32, random_state=1).split(X_train, y_train)
