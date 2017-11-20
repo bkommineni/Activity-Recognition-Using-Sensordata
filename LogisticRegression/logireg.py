@@ -20,13 +20,5 @@ if __name__ == '__main__':
     cm = confusion_matrix(y_test, predict, labels=["walking", "running"])
     print(cm)
 
-    # classes = np.unique(y_test)
-    # if (pos_label is None and not (np.all(classes == [0, 1]) or
-    #                                    np.all(classes == [-1, 1]) or
-    #                                    np.all(classes == [0]) or
-    #                                    np.all(classes == [-1]) or
-    #                                    np.all(classes == [1]))):
-    #     raise ValueError("Data is not binary and pos_label is not specified")
-    # aroc = roc_auc_score(y_test, predict)
-    # print(aroc)
+    classes = np.unique(y_test)
 
