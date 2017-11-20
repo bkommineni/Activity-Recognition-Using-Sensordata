@@ -29,7 +29,7 @@ public class UsernameActivity extends AppCompatActivity {
             editText.setError("Username cannot be empty");
             return;
         }
-        Log.d("UserId", username);
+        Log.d("UserId from username", username);
         intent.putExtra("USERID", username);
         startActivity(intent);
     }
