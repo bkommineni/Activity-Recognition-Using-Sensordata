@@ -113,6 +113,7 @@ public class MainActivity extends Activity
                 JSONObject jsonSensorData = pullThreads[i].call();
                 jsonSensorData.put("userid", userId);
                 jsonSensorData.put("label","running");
+                Log.d("Sensor Data", jsonSensorData.getString("userid"));
                 view.findViewById(R.id.Run).setBackgroundColor(Color.parseColor("#8b4513"));
                 sendFunction(LINK_TO_SERVER,jsonSensorData);
             }
@@ -162,4 +163,9 @@ public class MainActivity extends Activity
 	protected void onDestroy() {
 		super.onDestroy();
 	}
+
+    public void logout(View view) {
+        Intent intent = new Intent(this, UsernameActivity.class);
+        startActivity(intent);
+    }
 }
