@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 class Perceptron(object):
 
@@ -26,5 +27,25 @@ class Perceptron(object):
 
     def predict(self, X):
         return np.where(self.net_input(X) >= 0.0, 1, -1)
+
+
+df = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
+
+y = df.iloc[0:100, 44].values
+y = np.where(y == 'walking', -1, 1)
+X = df.iloc[0:100, [32, 34]].values
+
+ppn = Perceptron(eta=0.1, n_iter=40)
+ppn.fit(X,y)
+plt.plot(range(1,len(ppn.errors_) +1),ppn.errors_,marker='o')
+plt.xlabel('Epochs')
+plt.ylabel('NUmber of updates')
+plt.show()
+
+
+#An epoch is a measure of the number of times all of the training features are
+#used once to update the weights.For batch training all of the training samples
+#pass through the learning algorithm simultaneously in one epoch before weights are updated.
+
 
 

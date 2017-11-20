@@ -15,7 +15,6 @@ import com.emotionsense.demo.data.loggers.MyDataLogger;
 import com.ubhave.datahandler.loggertypes.AbstractDataLogger;
 import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.config.SensorConfig;
-import com.ubhave.sensormanager.config.pull.PullSensorConfig;
 import com.ubhave.sensormanager.sensors.SensorUtils;
 
 import org.json.JSONObject;
@@ -25,7 +24,7 @@ import Utils.VolleyNetwork;
 public class MainActivity extends Activity
 {
 	private final static String LOG_TAG = "MainActivity";
-    private final String LINK_TO_SERVER = "http://10.1.74.175:9998/";
+    private final String LINK_TO_SERVER = "http://10.10.35.91:9998/";
 	private AbstractDataLogger logger;
 	private ESSensorManager sensorManager;
     private boolean isSensing = false;

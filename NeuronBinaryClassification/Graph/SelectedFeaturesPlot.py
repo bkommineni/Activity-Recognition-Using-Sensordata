@@ -22,8 +22,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 ppn = Perceptron(max_iter=40, eta0=0.1, random_state=1)
 ppn.fit(X_train, y_train)
 allArrays = np.array([])
+n= 10
 
-for i in range(0,10):
+for i in range(0,n):
     y_pred = ppn.predict(X_test)
     if(len(allArrays) == 0):
         allArrays = np.array(ppn.coef_)
@@ -31,12 +32,10 @@ for i in range(0,10):
         allArrays = np.add(allArrays,np.array(ppn.coef_))
 
 header = list(perceptron.head(1))
-print header
-
-
-for x in xrange(0, len(header)):
-    print x,
-
+allArrays[:] = [x / n for x in allArrays]
+# print header
+# for x in xrange(0, len(header)):
+#     print x,
 plotGraph(allArrays,header)
 
 
