@@ -148,7 +148,7 @@ if __name__ == '__main__':
 
     with open("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv", "a") as cf:
         csvwriter = csv.writer(cf)
-        csvwriter.writerow(["User","Bin1,x","Bin2,x","Bin3,x","Bin4,x","Bin5,x","Bin6,x","Bin7,x","Bin8,x","Bin9,x","Bin10,x",
+        csvwriter.writerow(["User","Timestamp","Bin1,x","Bin2,x","Bin3,x","Bin4,x","Bin5,x","Bin6,x","Bin7,x","Bin8,x","Bin9,x","Bin10,x",
                             "Bin1,y","Bin2,y","Bin3,y","Bin4,y","Bin5,y","Bin6,y","Bin7,y","Bin8,y","Bin9,y","Bin10,y",
                             "Bin1,z","Bin2,z","Bin3,z","Bin4,z","Bin5,z","Bin6,z","Bin7,z","Bin8,z","Bin9,z","Bin10,z",
                             "TimeDiffPeaks-x","TimeDiffPeaks-y","TimeDiffPeaks-z",
@@ -166,6 +166,7 @@ if __name__ == '__main__':
             j_content = json.loads(line)
             device_id = j_content['deviceid']
             label = j_content['label']
+            timestamp = j_content['senseStartTimeMillis']
             bin_dis = generate_binned_distribution(j_content)
             list_of_peaks = generate_call_peaks(j_content)
             aalist = generate_absolute_acc_diff(j_content)
@@ -184,7 +185,7 @@ if __name__ == '__main__':
 
             with open(my_file, "a") as cf:
                 csvwriter = csv.writer(cf)
-                csvwriter.writerow([username,bin_dis[0][0],bin_dis[0][1],bin_dis[0][2],bin_dis[0][3],bin_dis[0][4],bin_dis[0][5],bin_dis[0][6],bin_dis[0][7],bin_dis[0][8],bin_dis[0][9],
+                csvwriter.writerow([username,timestamp,bin_dis[0][0],bin_dis[0][1],bin_dis[0][2],bin_dis[0][3],bin_dis[0][4],bin_dis[0][5],bin_dis[0][6],bin_dis[0][7],bin_dis[0][8],bin_dis[0][9],
                                     bin_dis[1][0], bin_dis[1][1], bin_dis[1][2], bin_dis[1][3], bin_dis[1][4],bin_dis[1][5], bin_dis[1][6], bin_dis[1][7], bin_dis[1][8], bin_dis[1][9],
                                     bin_dis[2][0], bin_dis[2][1], bin_dis[2][2], bin_dis[2][3], bin_dis[2][4],bin_dis[2][5], bin_dis[2][6], bin_dis[2][7], bin_dis[2][8], bin_dis[2][9],
                                     list_of_peaks[0], list_of_peaks[1],list_of_peaks[2],
