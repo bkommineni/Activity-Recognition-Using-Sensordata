@@ -17,18 +17,25 @@ from Classifier.decision_region import plot_decision_regions
 my_file = Path("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv")
 df = pd.read_csv(my_file)
 
-X = df.values[:, 2:45]
-Y = df.values[:, 45]
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.3)
+X_train = df.values[:, 2:45]
+Y_train = df.values[:, 45]
+
+test_file = Path("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile_10.csv")
+#X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.3)
+
+df_test = pd.read_csv(test_file)
+X_test = df_test.values[:, 2:45]
+Y_test = df_test.values[:, 45]
+#X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.3)
 
 
 logistic = LogisticRegression(C=1e5,random_state=1)
 
 logistic.fit(X_train,Y_train)
 
-print(logistic.intercept_)
-print(logistic.coef_)
-print(len(logistic.coef_))
+#print(logistic.intercept_)
+#print(logistic.coef_)
+#print(len(logistic.coef_))
 
 lg_score_train_Data = logistic.score(X_train,Y_train)
 
@@ -38,8 +45,8 @@ lg_score_test_Data = logistic.score(X_test,Y_test)
 
 print(lg_score_test_Data)
 
-walk_points = where(Y == "walking")
-run_points = where(Y == "running")
+#walk_points = where(Y == "walking")
+#run_points = where(Y == "running")
 #scatter(X[walk_points, 0], X[walk_points, 1], marker='o', c='b')
 #scatter(X[run_points, 0], X[run_points, 1], marker='x', c='r')
 #legend(['walking', 'running'])

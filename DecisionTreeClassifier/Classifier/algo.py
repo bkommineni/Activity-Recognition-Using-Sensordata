@@ -11,9 +11,16 @@ import numpy as np
 my_file = Path("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv")
 df = pd.read_csv(my_file)
 
-X = df.values[:, 1:44]
-Y = df.values[:, 44]
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.3)
+X_train = df.values[:, 2:45]
+Y_train = df.values[:, 45]
+
+test_file = Path("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile_10.csv")
+#X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.3)
+
+df_test = pd.read_csv(test_file)
+X_test = df_test.values[:, 2:45]
+Y_test = df_test.values[:, 45]
+
 
 #Using gini impurity
 df_gini = DecisionTreeClassifier(criterion = 'gini')
@@ -23,7 +30,7 @@ arr = df_gini.feature_importances_
 
 print(arr)
 
-tree.export_graphviz(df_gini,feature_names=df.columns.values[1:44],out_file='tree_gini.dot')
+tree.export_graphviz(df_gini,feature_names=df.columns.values[2:45],out_file='tree_gini.dot')
 
 #Predicting using test data
 Y_predict_gini = df_gini.predict(X_test)
@@ -34,7 +41,7 @@ Y_predict_gini = df_gini.predict(X_test)
 score = accuracy_score(Y_test,Y_predict_gini)
 #print(len(Y_test))
 
-#print(score)
+print(score)
 
 cm = confusion_matrix(Y_test,Y_predict_gini)
 
@@ -44,7 +51,7 @@ cm = confusion_matrix(Y_test,Y_predict_gini)
 df_entropy = DecisionTreeClassifier(criterion='entropy')
 df_entropy.fit(X_train, Y_train)
 
-tree.export_graphviz(df_entropy,feature_names=df.columns.values[1:44],out_file='tree_entropy.dot')
+tree.export_graphviz(df_entropy,feature_names=df.columns.values[2:45],out_file='tree_entropy.dot')
 
 Y_predict_entropy = df_entropy.predict(X_test)
 
