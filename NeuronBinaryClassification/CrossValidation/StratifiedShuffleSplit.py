@@ -8,6 +8,13 @@ import pandas as pd
 perceptron = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
 X = perceptron.values[:, 1:44]
 y = perceptron.values[:, 44]
+# perceptron_train = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
+# perceptron_test = pd.read_csv('../FeaturesCsvFile/featuresfile_10.csv')
+#
+# X_train = perceptron_train.values[:, 2:45]
+# y_train = perceptron_train.values[:, 45]
+# X_test = perceptron_test.values[:, 2:45]
+# y_test = perceptron_test.values[:, 45]
 
 sss = StratifiedShuffleSplit(n_splits=10, test_size=0.3, random_state=1)
 scores = []

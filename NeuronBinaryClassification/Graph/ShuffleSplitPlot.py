@@ -18,6 +18,7 @@ perceptron = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
 X = perceptron.values[:, 1:44]
 y = perceptron.values[:, 44]
 
+
 sss = StratifiedShuffleSplit(n_splits=10, test_size=0.3, random_state=1)
 scores = []
 allArrays = np.array([])
