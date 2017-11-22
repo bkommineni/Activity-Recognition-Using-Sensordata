@@ -27,8 +27,21 @@ df_gini = DecisionTreeClassifier(criterion = 'gini')
 df_gini.fit(X_train, Y_train)
 
 arr = df_gini.feature_importances_
-
 print(arr)
+
+inds = []
+
+for i in range(0,len(arr)):
+    if arr[i] > 0:
+        inds.append(i)
+
+print(inds)
+
+for i in range(0,len(inds)):
+    print(df.columns.values[inds[i]+2])
+
+#print(df.columns.values[0])
+
 
 tree.export_graphviz(df_gini,feature_names=df.columns.values[2:45],out_file='tree_gini.dot')
 
