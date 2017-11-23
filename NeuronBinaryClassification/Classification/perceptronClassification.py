@@ -23,9 +23,3 @@ print('\nConfustion Metrix')
 print(confusion_matrix(y_test,y_pred))
 print(classification_report(y_test,y_pred))
 print(ppn.coef_)
-
-
-
-#precision = The precision is the ratio tp / (tp + fp)
-#where tp is the number of true positives and fp the number of false positives.
-#The precision is intuitively the ability of the classifier not to label as positive a sample that is negative.

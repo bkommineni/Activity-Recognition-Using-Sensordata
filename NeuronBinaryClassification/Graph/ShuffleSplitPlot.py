@@ -15,8 +15,8 @@ def plotGraph(obj1,obj2):
     plt.show()
 
 perceptron = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
-X = perceptron.values[:, 1:44]
-y = perceptron.values[:, 44]
+X = perceptron.values[:, 2:45]
+y = perceptron.values[:, 45]
 
 
 sss = StratifiedShuffleSplit(n_splits=10, test_size=0.3, random_state=1)

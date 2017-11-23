@@ -7,7 +7,7 @@ import pandas as pd
 
 df = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
 
-y = df.iloc[0:100, 44].values
+y = df.iloc[0:100, 45].values
 print (y)
 y = np.where(y == 'walking', -1, 1)
 print (y)

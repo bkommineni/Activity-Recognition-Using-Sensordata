@@ -18,8 +18,8 @@ def plotGraph(obj1,obj2):
 
 
 perceptron = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
-X = perceptron.values[:, 1:44]
-y = perceptron.values[:, 44]
+X = perceptron.values[:, 2:45]
+y = perceptron.values[:, 45]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 ppn = Perceptron(max_iter=40, eta0=0.1, random_state=1)
 ppn.fit(X_train, y_train)
