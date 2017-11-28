@@ -5,7 +5,8 @@ import pandas as pd
 
 
 
-df = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
+df = pd.read_csv('../FeaturesCsvFile/featuresfile_10.csv')
+
 
 y = df.iloc[0:100, 45].values
 print (y)

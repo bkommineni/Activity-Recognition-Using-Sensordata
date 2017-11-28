@@ -5,12 +5,16 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
+perceptron_train = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
+perceptron_test = pd.read_csv('../FeaturesCsvFile/featuresfile_10.csv')
 
-perceptron = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
 
-X = perceptron.values[:, 2:45]
-y = perceptron.values[:, 45]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+X_train = perceptron_train.values[:, 2:45]
+y_train = perceptron_train.values[:, 45]
+X_test = perceptron_test.values[:, 2:45]
+y_test = perceptron_test.values[:, 45]
+
 ppn = Perceptron(n_iter=40, eta0=0.1, random_state=1)
 ppn.fit(X_train, y_train)
 y_pred = ppn.predict(X_test)
