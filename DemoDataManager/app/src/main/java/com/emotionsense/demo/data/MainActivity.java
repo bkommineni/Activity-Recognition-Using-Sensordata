@@ -25,7 +25,7 @@ import Utils.VolleyNetwork;
 public class MainActivity extends Activity
 {
 	private final static String LOG_TAG = "MainActivity";
-    private final String LINK_TO_SERVER = "http://10.10.35.91:9998/";
+    private final String LINK_TO_SERVER = "http://10.10.35.91:13653/";
 	private AbstractDataLogger logger;
 	private ESSensorManager sensorManager;
     private boolean isSensing = false;
@@ -149,12 +149,13 @@ public class MainActivity extends Activity
                     @Override
                     public void onResponse(JSONObject response) {
                         Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_SHORT).show();
+                        Log.d("Response from server", response.toString());
                     }
                 }, new Response.ErrorListener() {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(getApplicationContext(), "Error connecting to the server", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getApplicationContext(), "Error connecting to the server", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
