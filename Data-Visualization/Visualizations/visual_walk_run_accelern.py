@@ -63,6 +63,6 @@ plt.plot(ind_run, z_axis_run_data,color='y')
 plt.ylabel("Acceleration")
 plt.title("z-axis")
 
-plt.subplots_adjust(hspace=0.8)
+plt.subplots_adjust(hspace=0.8,wspace=0.3)
 plt.suptitle("Walking vs Running")
 plt.savefig('./../images/Acceleration_walk_run.png',dpi=1000)
