@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AreaUnderRoc2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogisticRegression.ipynb" afterPath="$PROJECT_DIR$/LogisticRegression.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cm_lr.png" afterPath="$PROJECT_DIR$/cm_lr.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cm_lr_normalized.png" afterPath="$PROJECT_DIR$/cm_lr_normalized.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
