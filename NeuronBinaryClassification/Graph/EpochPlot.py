@@ -43,9 +43,5 @@ plt.ylabel('NUmber of updates')
 plt.show()
 
 
-#An epoch is a measure of the number of times all of the training features are
-#used once to update the weights.For batch training all of the training samples
-#pass through the learning algorithm simultaneously in one epoch before weights are updated.
-
 
 
