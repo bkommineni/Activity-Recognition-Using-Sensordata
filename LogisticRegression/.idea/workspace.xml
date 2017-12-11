@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AreaUnderRoc2.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cm_lr.png" afterPath="$PROJECT_DIR$/cm_lr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cm_lr_normalized.png" afterPath="$PROJECT_DIR$/cm_lr_normalized.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roc_lr.png" afterPath="$PROJECT_DIR$/roc_lr.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogisticRegression.ipynb" afterPath="$PROJECT_DIR$/LogisticRegression.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logireg.py" afterPath="$PROJECT_DIR$/logireg.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -299,7 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511171070364</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jupyter notebook update 3 train 3 test">
+      <created>1512986663129</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512986663129</updated>
+    </task>
+    <task id="LOCAL-00006" summary="jupyter notebook update 3 train 3 test">
+      <created>1512986713966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512986713966</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -333,7 +342,8 @@
     <MESSAGE value="update code for logistic regression classifier" />
     <MESSAGE value="added KFold cross-validation &#10;Also added jupyter notebook for lr" />
     <MESSAGE value="jupyter notebook update" />
-    <option name="LAST_COMMIT_MESSAGE" value="jupyter notebook update" />
+    <MESSAGE value="jupyter notebook update 3 train 3 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="jupyter notebook update 3 train 3 test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
