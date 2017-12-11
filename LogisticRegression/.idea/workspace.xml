@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="">
+    <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="lr roc update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogisticRegression.ipynb" afterPath="$PROJECT_DIR$/LogisticRegression.ipynb" />
     </list>
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logireg.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logireg.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logireg.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -26,19 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="roc_lr.png" pinned="false" current-in-tab="false">
+      <file leaf-file-name="roc_lr.png" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/roc_lr.png">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogisticRegression.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LogisticRegression.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
           </provider>
         </entry>
       </file>
@@ -68,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/AreaUnderRoc.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+              <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -121,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LogisticRegression.ipynb" />
         <option value="$PROJECT_DIR$/Data/KFoldCrossValidation.py" />
         <option value="$PROJECT_DIR$/KFoldCrossValidation.py" />
         <option value="$PROJECT_DIR$/AreaUnderRoc.py" />
@@ -129,6 +119,7 @@
         <option value="$PROJECT_DIR$/AreaUnderRoc2.py" />
         <option value="$PROJECT_DIR$/lrCurve.py" />
         <option value="$PROJECT_DIR$/logireg.py" />
+        <option value="$PROJECT_DIR$/LogisticRegression.ipynb" />
       </list>
     </option>
   </component>
@@ -308,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512986713966</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lr roc update">
+      <created>1512986836789</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512986836789</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -343,7 +341,8 @@
     <MESSAGE value="added KFold cross-validation &#10;Also added jupyter notebook for lr" />
     <MESSAGE value="jupyter notebook update" />
     <MESSAGE value="jupyter notebook update 3 train 3 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="jupyter notebook update 3 train 3 test" />
+    <MESSAGE value="lr roc update" />
+    <option name="LAST_COMMIT_MESSAGE" value="lr roc update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -668,13 +667,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LogisticRegression.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AreaUnderRoc2.py" />
     <entry file="file://$PROJECT_DIR$/lrCurve.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -684,20 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KFoldCrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AreaUnderRoc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -718,6 +700,23 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFoldCrossValidation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogisticRegression.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="1" />
         </state>
       </provider>
     </entry>
