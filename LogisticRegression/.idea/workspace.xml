@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LogisticRegression.ipynb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LogisticRegression.ipynb" afterPath="$PROJECT_DIR$/LogisticRegression3train12test.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogisticRegression3train12test.ipynb" afterPath="$PROJECT_DIR$/LogisticRegression3train12test.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -328,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513028778772</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="rename the file according to experiments">
+      <created>1513029084418</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1513029084418</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -366,7 +372,8 @@
     <MESSAGE value="lr roc update" />
     <MESSAGE value="Added experiment for 13 people train test" />
     <MESSAGE value="Added experiment for 13 people train test&#10;also an update for ROC curve" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added experiment for 13 people train test&#10;also an update for ROC curve" />
+    <MESSAGE value="rename the file according to experiments" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename the file according to experiments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
