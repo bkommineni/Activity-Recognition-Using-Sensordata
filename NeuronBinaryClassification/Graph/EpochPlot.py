@@ -29,13 +29,13 @@ class Perceptron(object):
         return np.where(self.net_input(X) >= 0.0, 1, -1)
 
 
-df = pd.read_csv('../FeaturesCsvFile/featuresfile.csv')
+df = pd.read_csv('../FeaturesCsvFile/featuresfile_10.csv')
 
-y = df.iloc[0:100, 44].values
+y = df.iloc[0:, 45].values
 y = np.where(y == 'walking', -1, 1)
-X = df.iloc[0:100, [32, 34]].values
+X = df.iloc[0:, [38, 40]].values
 
-ppn = Perceptron(eta=0.1, n_iter=40)
+ppn = Perceptron(eta=0.1, n_iter=100)
 ppn.fit(X,y)
 plt.plot(range(1,len(ppn.errors_) +1),ppn.errors_,marker='o')
 plt.xlabel('Epochs')
