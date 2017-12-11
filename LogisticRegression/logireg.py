@@ -1,9 +1,6 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_auc_score
-import numpy as np
 
 if __name__ == '__main__':
 
@@ -24,6 +21,3 @@ if __name__ == '__main__':
 
     cm = confusion_matrix(y_test, predict, labels=["walking", "running"])
     print(cm)
-
-    # classes = np.unique(y_test)
-
