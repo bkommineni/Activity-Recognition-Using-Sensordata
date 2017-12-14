@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/15train15testLogisticRegression.ipynb" afterPath="$PROJECT_DIR$/15train15testLogisticRegression.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -347,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513233535558</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="notebook pdfs update">
+      <created>1513233577363</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1513233577363</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -388,7 +396,8 @@
     <MESSAGE value="rename the file according to experiments" />
     <MESSAGE value="Roc update" />
     <MESSAGE value="notebooks updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="notebooks updates" />
+    <MESSAGE value="notebook pdfs update" />
+    <option name="LAST_COMMIT_MESSAGE" value="notebook pdfs update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
