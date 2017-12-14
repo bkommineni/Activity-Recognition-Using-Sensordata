@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="Roc update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cm_lr.png" afterPath="$PROJECT_DIR$/cm_lr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cm_lr_normalized.png" afterPath="$PROJECT_DIR$/cm_lr_normalized.png" />
+    <list default="true" id="293888eb-5c08-46bf-9887-88c0e633e089" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -342,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513031703902</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="notebooks updates">
+      <created>1513233535558</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513233535558</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -382,7 +387,8 @@
     <MESSAGE value="Added experiment for 13 people train test&#10;also an update for ROC curve" />
     <MESSAGE value="rename the file according to experiments" />
     <MESSAGE value="Roc update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Roc update" />
+    <MESSAGE value="notebooks updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="notebooks updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
