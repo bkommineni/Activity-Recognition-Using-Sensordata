@@ -1,5 +1,3 @@
-
-
 def cal_peaks(readings,timestamps):
     flag = False
     prev_val = readings[0]
