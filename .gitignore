@@ -1,6 +1,9 @@
 *.bin
 *.class
 *.iml
+.DS_Store
+DemoDataManager/local.properties
+LogisticRegression-Try/.idea/
 DemoDataManager/build/
 DemoDataManager/app/build/
 DemoDataManager/.gradle/
@@ -18,3 +21,6 @@ CombinedFeatures/.idea/
 *.pyc
 DemoDataManager/DemoDataManager.iml
 DecisionTreeClassifier/.idea/
+LogisticRegression/.idea/
+LogisticRegression/Data/
+Data-Visualization/.idea/

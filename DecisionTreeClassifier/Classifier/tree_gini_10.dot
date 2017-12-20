@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="AvgAbsDiff-x <= 1.449\ngini = 0.5\nsamples = 362\nvalue = [186, 176]"] ;
+1 [label="Bin1,z <= 0.129\ngini = 0.067\nsamples = 173\nvalue = [6, 167]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="StdDev-z <= 4.694\ngini = 0.046\nsamples = 171\nvalue = [4, 167]"] ;
+1 -> 2 ;
+3 [label="AvgAcc-z <= 10.154\ngini = 0.035\nsamples = 170\nvalue = [3, 167]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 156\nvalue = [0, 156]"] ;
+3 -> 4 ;
+5 [label="Bin1,y <= 0.007\ngini = 0.337\nsamples = 14\nvalue = [3, 11]"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 11\nvalue = [0, 11]"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]"] ;
+2 -> 8 ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]"] ;
+1 -> 9 ;
+10 [label="StdDev-z <= 3.533\ngini = 0.091\nsamples = 189\nvalue = [180, 9]"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="AvgAcc-z <= 9.818\ngini = 0.476\nsamples = 23\nvalue = [14, 9]"] ;
+10 -> 11 ;
+12 [label="AvgAcc-x <= -1.761\ngini = 0.375\nsamples = 12\nvalue = [3, 9]"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 9\nvalue = [0, 9]"] ;
+12 -> 14 ;
+15 [label="gini = 0.0\nsamples = 11\nvalue = [11, 0]"] ;
+11 -> 15 ;
+16 [label="gini = 0.0\nsamples = 166\nvalue = [166, 0]"] ;
+10 -> 16 ;
+}

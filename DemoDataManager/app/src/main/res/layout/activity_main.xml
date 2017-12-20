@@ -32,4 +32,16 @@
         android:layout_alignParentEnd="true"
         android:background="#8b4513"
         android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textColor="#ffffff"
+        android:onClick="logout"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/Run"
+        android:layout_centerHorizontal="true"
+        android:background="#8b4513"/>
 </RelativeLayout>

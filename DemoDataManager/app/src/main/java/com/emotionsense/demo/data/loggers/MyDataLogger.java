@@ -8,12 +8,11 @@ import com.ubhave.datahandler.loggertypes.AbstractDataLogger;
 import com.ubhave.datahandler.loggertypes.AbstractStoreOnlyLogger;
 import com.ubhave.sensormanager.ESException;
 
-import java.util.ArrayList;
-
 import static com.emotionsense.demo.data.DemoApplication.getContext;
 
 /**
  * Created by bharu on 9/21/17.
+ *
  */
 
 public class MyDataLogger  extends AbstractStoreOnlyLogger {
@@ -58,4 +57,5 @@ public class MyDataLogger  extends AbstractStoreOnlyLogger {
     protected String getFileStorageName() {
         return "SensorData";
     }
+
 }
