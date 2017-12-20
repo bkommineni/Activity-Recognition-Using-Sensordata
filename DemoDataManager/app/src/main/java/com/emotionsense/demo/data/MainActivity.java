@@ -25,7 +25,7 @@ import Utils.VolleyNetwork;
 public class MainActivity extends Activity
 {
 	private final static String LOG_TAG = "MainActivity";
-    private final String LINK_TO_SERVER = "http://10.1.74.175:9998/";
+    private final String LINK_TO_SERVER = "http://192.168.11.52:9998/";
 	private AbstractDataLogger logger;
 	private ESSensorManager sensorManager;
     private boolean isSensing = false;
