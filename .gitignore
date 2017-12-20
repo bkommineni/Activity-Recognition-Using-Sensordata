@@ -1,6 +1,7 @@
 *.bin
 *.class
 *.iml
+.DS_Store
 DemoDataManager/local.properties
 LogisticRegression-Try/.idea/
 DemoDataManager/build/
