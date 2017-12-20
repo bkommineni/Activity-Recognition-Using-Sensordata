@@ -1,6 +1,7 @@
 package com.emotionsense.demo.data;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,7 +16,6 @@ import com.emotionsense.demo.data.loggers.MyDataLogger;
 import com.ubhave.datahandler.loggertypes.AbstractDataLogger;
 import com.ubhave.sensormanager.ESSensorManager;
 import com.ubhave.sensormanager.config.SensorConfig;
-import com.ubhave.sensormanager.config.pull.PullSensorConfig;
 import com.ubhave.sensormanager.sensors.SensorUtils;
 
 import org.json.JSONObject;
@@ -25,11 +25,12 @@ import Utils.VolleyNetwork;
 public class MainActivity extends Activity
 {
 	private final static String LOG_TAG = "MainActivity";
-    private final String LINK_TO_SERVER = "http://192.168.11.52:9998/";
+    private final String LINK_TO_SERVER = "http://10.10.35.91:13653/";
 	private AbstractDataLogger logger;
 	private ESSensorManager sensorManager;
     private boolean isSensing = false;
 	private SenseOnceThread[] pullThreads;
+    private String userId = "";
 
 	// TODO: add push sensors you want to sense from here
 	private final int[] pushSensors = {};
@@ -46,6 +47,10 @@ public class MainActivity extends Activity
 		try
 		{
 			// TODO: change this line of code to change the type of data logger
+            Intent intent = getIntent();
+            Bundle mBundle = intent.getExtras();
+            userId = (String) mBundle.get("USERID");
+            Log.d("UserId from Main", userId);
             logger = MyDataLogger.getInstance();
             SensorConfig sensorConfig = new SensorConfig();
             sensorConfig.setParameter("MOTION_SAMPLING_DELAY", 1);
@@ -72,7 +77,9 @@ public class MainActivity extends Activity
                 Log.d("debug",Integer.toString(pullSensors[i]));
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
                 JSONObject jsonSensorData = pullThreads[i].call();
+                jsonSensorData.put("userid", userId);
                 jsonSensorData.put("label","walking");
+                Log.d("Sensor Data", jsonSensorData.getString("userid"));
                 view.findViewById(R.id.Walk).setBackgroundColor(Color.parseColor("#8b4513"));
                 sendFunction(LINK_TO_SERVER,jsonSensorData);
             }
@@ -104,7 +111,9 @@ public class MainActivity extends Activity
                 Log.d("debug",Integer.toString(pullSensors[i]));
                 System.out.println("pull sensors : " + Integer.toString(pullSensors[i]));
                 JSONObject jsonSensorData = pullThreads[i].call();
+                jsonSensorData.put("userid", userId);
                 jsonSensorData.put("label","running");
+                Log.d("Sensor Data", jsonSensorData.getString("userid"));
                 view.findViewById(R.id.Run).setBackgroundColor(Color.parseColor("#8b4513"));
                 sendFunction(LINK_TO_SERVER,jsonSensorData);
             }
@@ -140,12 +149,13 @@ public class MainActivity extends Activity
                     @Override
                     public void onResponse(JSONObject response) {
                         Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_SHORT).show();
+                        Log.d("Response from server", response.toString());
                     }
                 }, new Response.ErrorListener() {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        // TODO Auto-generated method stub
+//                        Toast.makeText(getApplicationContext(), "Error connecting to the server", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
@@ -154,4 +164,9 @@ public class MainActivity extends Activity
 	protected void onDestroy() {
 		super.onDestroy();
 	}
+
+    public void logout(View view) {
+        Intent intent = new Intent(this, UsernameActivity.class);
+        startActivity(intent);
+    }
 }

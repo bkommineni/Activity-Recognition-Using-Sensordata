@@ -1,6 +1,8 @@
 *.bin
 *.class
 *.iml
+DemoDataManager/local.properties
+LogisticRegression-Try/.idea/
 DemoDataManager/build/
 DemoDataManager/app/build/
 DemoDataManager/.gradle/

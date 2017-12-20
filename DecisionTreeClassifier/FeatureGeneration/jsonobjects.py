@@ -6,6 +6,8 @@ import statistics
 from pathlib import Path
 
 import numpy as np
+import sys
+
 from FeatureGeneration.CalPeaks import cal_peaks
 from FeatureGeneration.GetTimeStampsPeaks import get_timestamps_peaks
 
@@ -13,6 +15,11 @@ ED = 10000
 
 
 def generate_binned_distribution(data):
+    '''
+    method to generate binned distribution
+    :param data:
+    :return:
+    '''
     x_axis_data = data['xAxis']
     y_axis_data = data['yAxis']
     z_axis_data = data['zAxis']
@@ -142,11 +149,14 @@ def generate_res_acc(data):  # Average Resultant Acceleration
 
 
 if __name__ == '__main__':
-    my_file = Path("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv")
-    if my_file.exists() :
-        os.remove("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv")
+    featureFileName = sys.argv[1]
+    dataFile = sys.argv[2]
 
-    with open("/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/FeaturesCsvFile/featuresfile.csv", "a") as cf:
+    my_file = Path(featureFileName)
+    if my_file.exists() :
+        os.remove(featureFileName)
+
+    with open(featureFileName, "a") as cf:
         csvwriter = csv.writer(cf)
         csvwriter.writerow(["User","Timestamp","Bin1,x","Bin2,x","Bin3,x","Bin4,x","Bin5,x","Bin6,x","Bin7,x","Bin8,x","Bin9,x","Bin10,x",
                             "Bin1,y","Bin2,y","Bin3,y","Bin4,y","Bin5,y","Bin6,y","Bin7,y","Bin8,y","Bin9,y","Bin10,y",
@@ -157,7 +167,7 @@ if __name__ == '__main__':
                             "StdDev-x","StdDev-y","StdDev-z",
                             "AvgResAcc","Label"])
 
-    file_path = "/Users/bharu/CS690-PROJECTS/ActivityAnalyzer/activity_analyzer/DecisionTreeClassifier/Data/BAS.json"
+    file_path = dataFile
     with open(file_path) as f:
         for line in f:
             #bhargavi_device = 'd4e6b172e6e4600b'
@@ -194,4 +204,4 @@ if __name__ == '__main__':
                                     aalist[0], aalist[1], aalist[2],
                                     avgacclist[0], avgacclist[1], avgacclist[2],
                                     stddevlist[0], stddevlist[1],stddevlist[2],
-                                    avg_res_acc,label])
+                                    avg_res_acc, label])
