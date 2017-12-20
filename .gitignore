@@ -21,3 +21,5 @@ DecisionTreeClassifier/.idea/
 LogisticRegression/.idea/
 LogisticRegression/Data/
 Data-Visualization/.idea/
+Jupyter_Notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
